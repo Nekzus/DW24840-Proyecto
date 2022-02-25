@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/cubano" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/roboto-mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Nekzus Game Store</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo y titulo con link a la pagina de inicio -->
+        <div class="logo centerItemsGrid">
+            <a href="../index.html"><img class="logoSite" src="../images/logo-nekzus-game-store-shadow.png"
+                    alt="logo"></a>
+        </div>
+        <div class="title centerItemsGrid">
+            <a href="../index.html">
+                <div class="animate__animated animate__rubberBand">
+                    <h1 class="titleSite">Nekzus<span class="subtitleSite">Game Store</span></h1>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- Menu de navegacion -->
+    <nav class="navbar">
+        <ul class="listInline">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./products.html">Productos</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./login.html">Ingreso</a></li>
+            <li><a href="./register.html">Registro</a></li>
+            <li><a href="./cart.html">Carrito</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Formulario de registro -->
+        <section class="containerContentForm">
+            <div class="subtitleForm">
+                <h3 class="contentSubtitle">Registrate</h3>
+            </div>
+            <div class="formGroup centerItemsGrid">
+                <h3>Completa todos los campos</h3>
+                <form action="" class="form formRegister">
+                    <div class="camp">
+                        <label for="name">Nombre</label>
+                        <input type="name" id="name" placeholder="Nombre de usuario" required>
+                    </div>
+                    <div class="camp">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="camp">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="camp">
+                        <label for="password2">Confirmar contraseña</label>
+                        <input type="password" id="password2" placeholder="Confirmar contraseña" required>
+                    </div>
+                    <button class="btnSubmit" type="submit">Registrarse</button>
+                    <p>¿Ya tienes una cuenta?<a href="./login.html"> Inicia sesión</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerSocials">
+            <!-- Sobre nosotros -->
+            <section class="sectionAbout">
+                <h3>Sobre Nekzus Game Store</h3>
+                <p>Nekzus Game Store es una tienda de videojuegos en línea, donde podrás encontrar todo tipo de
+                    videojuegos, desde los más populares hasta los más nuevos.</p>
+            </section>
+            <hr>
+            <!-- Redes sociales, newsletter y contacto -->
+            <section class="sectionSocials">
+                <div>
+                    <h3>Suscribete</h3>
+                    <form action="">
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu email">
+                        <input class="btnSubmitNews" type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div>
+                    <h3>Síguenos en:</h3>
+                    <a href="https://www.youtube.com/" title="YouTube" target="_blank"><img
+                            src="../images/logotipo_youtube.png" alt="youtube icon"></a>
+                    <a href="https://es-la.facebook.com/" title="Facebook" target="_blank"><img
+                            src="../images/logo_facebook.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"><img
+                            src="../images/logotipo_instagram.png" alt="instagram icon"></a>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Nekzus Game Store</p>
+                    <p>Avenida Siempreviva, 742</p>
+                    <p>Ciudad de Springfield, Estados Unidos</p>
+                    <p>5555555555</p>
+                </div>
+            </section>
+        </div>
+        <!-- Pie de pagina con copyright -->
+        <div class="footerCopyright">
+            <p class="copyright">&copy; 2022 Copyright - Nekzus Game Store</p>
+        </div>
+    </footer>
+
+</html>
