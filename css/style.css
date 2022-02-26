@@ -31,19 +31,19 @@ header a {
   font-weight: 400;
 }
 
-.sliderImages {
+/* .sliderImages {
   text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(#12181B, #2A2E35);
-}
+} */
 
-.welcomeSlider {
+/* .welcomeSlider {
   vertical-align: middle;
   width: 100%;
   max-width: 70rem;
-}
+} */
 
 /**** NAVBAR ****/
 .navbar {
@@ -53,32 +53,13 @@ header a {
   opacity: 0.8;
   font-size: 1.2rem;
   padding: 1rem;
-  z-index: 3;
-  color: white;
+  z-index: 10;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
 }
 
-.listInline {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  overflow: hidden;
-  max-width: 120rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.listInline>li a {
-  display: block;
-  text-align: center;
-  padding: 0.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-.listInline>li a:hover {
+.nav-link:hover {
   padding: 0.5rem;
   transform: translateY(-3%);
   background-color: #25E35F;
@@ -92,8 +73,7 @@ main {
   color: white;
 }
 
-.containerContent,
-.containerContentHome {
+.containerContent {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 350px;
@@ -116,9 +96,19 @@ main {
 }
 
 .containerContentHome {
-  grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  padding: 20px;
 }
-
+.productsHome{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  
+  gap: 20px;
+  padding: 20px;
+}
 .subtitle {
   grid-column: 1/-1;
   grid-template-rows: 50px;
@@ -155,16 +145,17 @@ main {
   margin: 1rem;
 }
 
-.productCard {
+.productCard, 
+.productCardHome{
   display: flex;
+  
   flex-direction: column;
   align-content: center;
   height: 350px;
   justify-content: space-between;
   align-items: center;
   row-gap: 1rem;
-  z-index: 1;
-  background-image: linear-gradient(to top, #12181B, #2A2E35);
+  background-image: linear-gradient(to bottom, #12181B, #2A2E35);
   padding: 2rem;
   border-radius: 0.5rem;
   color: white;
@@ -175,7 +166,11 @@ main {
   width: min(300px, 100%);
 }
 
-.productCard:hover {
+.productCardHome {
+  flex: 0 0 auto;
+}
+
+.productCard, .productCardHome:hover {
   box-shadow: 5px 5px 20px black;
   transform: translateY(-3%);
 }
@@ -492,6 +487,10 @@ iframe {
 @media only screen and (min-width: 992px) {
   .titleSite {
     font-size: 3.5rem;
+  }
+
+  .cart {
+    display: none;
   }
 
   iframe {
