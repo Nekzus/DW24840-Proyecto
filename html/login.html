@@ -48,7 +48,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="cart nav-item mb-2 mb-lg-0">
-                <a class="nav-link" aria-current="page" href="./cart.html"><i class="bi bi-cart-fill"></i></a>
+                <a class="nav-link" data-bs-toggle="offcanvas" aria-controls="menuCart" href="#menuCart"><i
+                        class="bi bi-cart-fill position-relative"><span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill">0
+                            <span class="visually-hidden"></span></i></a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -68,8 +71,10 @@
                         <a class="nav-link" aria-current="page" href="./register.html">Registro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="cartBar nav-link" aria-current="page" href="./cart.html"><i
-                                class="bi bi-cart-fill"></i></a>
+                        <a class="cartBar nav-link" data-bs-toggle="offcanvas" aria-controls="menuCart"
+                            href="#menuCart"><i class="bi bi-cart-fill position-relative"><span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill">0
+                                    <span class="visually-hidden"></span></i></a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -90,7 +95,8 @@
                 <form>
                     <div class="mb-3 camp">
                         <label for="exampleInputEmail1" class="form-label">E-mail usuario</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Correo electronico">
                     </div>
                     <div class="mb-3 camp">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -101,27 +107,45 @@
                 </form>
             </div>
         </section>
+        <!-- Menu off-canvas carrito de compras -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="menuCart"
+            aria-labelledby="menuCartLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="menuCartLabel">Carrito de compras</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h5 class="product">Producto</h5>
+                <h5 class="price">Subtotal</h5>
+                <h6 class="total">Total:</h6>
+                <h6 class="totalPrice">$ total:</h6>
+                <button type="button" class="btnBuy btn btn-outline-info">Comprar</button>
+            </div>
+        </div>
     </main>
-
     <footer>
         <div class="footerSocials">
             <!-- Sobre nosotros -->
             <section class="sectionAbout">
                 <h3>Sobre Nekzus Game Store</h3>
-                <p>Nekzus Game Store es una tienda de videojuegos en línea, donde podrás encontrar todo tipo de
-                    videojuegos, desde los más populares hasta los más nuevos.</p>
+                <p>
+                    Nekzus Game Store es una tienda de videojuegos en línea, donde
+                    podrás encontrar todo tipo de videojuegos, desde los más populares
+                    hasta los más nuevos.
+                </p>
             </section>
-            <hr>
+            <hr />
             <!-- Redes sociales, newsletter y contacto -->
             <section class="sectionSocials">
-                <div>
+                <div class="newsletter">
                     <h3>Suscribete</h3>
                     <form action="">
-                        <input type="email" name="email" id="email" placeholder="Ingresa tu email">
-                        <input class="btnSubmitNews" type="submit" value="Enviar">
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu email" />
+                        <button class="btnSubmitNews btn btn-outline-info">Enviar</button>
                     </form>
                 </div>
-                <div>
+                <div class="socials">
                     <h3>Síguenos en:</h3>
                     <a href="https://www.youtube.com/" title="YouTube" target="_blank"><i id="youtube"
                             class="bi bi-youtube"></i></a>
@@ -130,7 +154,7 @@
                     <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i id="instagram"
                             class="bi bi-instagram"></i></a>
                 </div>
-                <div>
+                <div class="contact">
                     <h3>Contacto</h3>
                     <p>Nekzus Game Store</p>
                     <p>Avenida Siempreviva, 742</p>

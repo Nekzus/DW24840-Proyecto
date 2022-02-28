@@ -50,7 +50,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="cart nav-item mb-2 mb-lg-0">
-                <a class="nav-link" aria-current="page" href="./html/cart.html"><i class="bi bi-cart-fill"></i></a>
+                <a class="nav-link" data-bs-toggle="offcanvas" aria-controls="menuCart" href="#menuCart"><i
+                        class="bi bi-cart-fill position-relative"><span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill">0
+                            <span class="visually-hidden"></span></i></a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -70,7 +73,10 @@
                         <a class="nav-link" aria-current="page" href="./html/register.html">Registro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="cartBar nav-link" aria-current="page" href="./html/cart.html"><i class="bi bi-cart-fill"></i></a>
+                        <a class="cartBar nav-link" data-bs-toggle="offcanvas" aria-controls="menuCart"
+                            href="#menuCart"><i class="bi bi-cart-fill position-relative"><span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill">0
+                                    <span class="visually-hidden"></span></i></a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -132,19 +138,18 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
     <main class="container-flex">
+        <!-- Listado de productos destacados: listado horizontal -->
         <section class="containerContentHome">
             <div class="subtitle">
                 <h3 class="contentSubtitle">Productos destacados</h3>
@@ -216,7 +221,7 @@
                 </div>
             </div>
         </section>
-        <!-- Listado de productos en oferta: a futuro listado horizontal -->
+        <!-- Listado de productos en oferta: listado horizontal -->
         <section class="containerContentHome">
             <div class="subtitle">
                 <h3 class="contentSubtitle">Ofertas disponibles</h3>
@@ -288,6 +293,22 @@
                 </div>
             </div>
         </section>
+        <!-- Menu off-canvas carrito de compras -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="menuCart"
+            aria-labelledby="menuCartLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="menuCartLabel">Carrito de compras</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h5 class="product">Producto</h5>
+                <h5 class="price">Subtotal</h5>
+                <h6 class="total">Total:</h6>
+                <h6 class="totalPrice">$ total:</h6>
+                <button type="button" class="btnBuy btn btn-outline-info">Comprar</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footerSocials">
@@ -303,20 +324,23 @@
             <hr />
             <!-- Redes sociales, newsletter y contacto -->
             <section class="sectionSocials">
-                <div>
+                <div class="newsletter">
                     <h3>Suscribete</h3>
                     <form action="">
                         <input type="email" name="email" id="email" placeholder="Ingresa tu email" />
-                        <input class="btnSubmitNews" type="submit" value="Enviar" />
+                        <button class="btnSubmitNews btn btn-outline-info">Enviar</button>
                     </form>
                 </div>
-                <div>
+                <div class="socials">
                     <h3>Síguenos en:</h3>
-                    <a href="https://www.youtube.com/" title="YouTube" target="_blank"><i id="youtube" class="bi bi-youtube"></i></a>
-                    <a href="https://es-la.facebook.com/" title="Facebook" target="_blank"><i id="facebook" class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i id="instagram" class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/" title="YouTube" target="_blank"><i id="youtube"
+                            class="bi bi-youtube"></i></a>
+                    <a href="https://es-la.facebook.com/" title="Facebook" target="_blank"><i id="facebook"
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i id="instagram"
+                            class="bi bi-instagram"></i></a>
                 </div>
-                <div>
+                <div class="contact">
                     <h3>Contacto</h3>
                     <p>Nekzus Game Store</p>
                     <p>Avenida Siempreviva, 742</p>
