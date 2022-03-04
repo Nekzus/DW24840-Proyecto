@@ -107,10 +107,6 @@ header a:hover {
   top: 0;
 }
 
-.navbar-collapse {
-  justify-items: center;
-}
-
 .nav-link {
   color: var(--color-font-primary);
   text-decoration: none;
@@ -157,8 +153,17 @@ header a:hover {
   font-size: 1.25rem;
 }
 
-.cart {
+.cartLink {
+  color: white;
   font-size: 1.7rem;
+  padding: 0.25rem;
+  transition: 0.7s;
+  border-radius: 0.5rem;
+}
+
+.cartLink:hover {
+  color: var(--color-bg-primary);
+  background-color: var(--color-green);
 }
 
 .badge {
@@ -276,7 +281,7 @@ main {
   color: var(--color-font-primary);
   font-family: var(--font-secondary);
   font-size: 1.2rem;
-  box-shadow: 0px 0.0625rem 0.625rem var(--color-shadow);
+  box-shadow: 0rem 0.0625rem 0.625rem var(--color-shadow);
   transition: all 0.7s ease;
   width: min(18.75rem, 100%);
 }
@@ -534,7 +539,7 @@ iframe {
   border-radius: 2rem;
   border-width: 0.1rem;
   border-color: var(--color-green);
-  box-shadow: 0px 0.0625rem 0.625rem var(--color-green);
+  box-shadow: 0rem 0.0625rem 0.625rem var(--color-green);
 }
 
 .sectionSocials>div h3 {
@@ -559,7 +564,7 @@ iframe {
   border-radius: 2rem;
   border-width: 0.1rem;
   border-color: var(--color-violet);
-  box-shadow: 0px 0.0625rem 0.625rem var(--color-violet);
+  box-shadow: 0rem 0.0625rem 0.625rem var(--color-violet);
 }
 
 .newsletter>form {
@@ -581,7 +586,7 @@ iframe {
   border-radius: 2rem;
   border-width: 0.1rem;
   border-color: var(--color-orange);
-  box-shadow: 0px 0.0625rem 0.625rem var(--color-orange)
+  box-shadow: 0rem 0.0625rem 0.625rem var(--color-orange)
 }
 
 .sectionSocials i {
