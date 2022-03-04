@@ -26,6 +26,9 @@
   src: url("../fonts/RobotoMono-Light.ttf");
 }
 
+
+/**** GLOBAL SETTINGS ****/
+
 /**** Definición de variables ****/
 :root {
   --color-bg-primary: #12181B;
@@ -43,7 +46,6 @@
   --font-tertiary: "Roboto Mono", monospace;
 }
 
-/**** GLOBAL SETTINGS ****/
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +54,16 @@
 
 html {
   font-size: 80%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  margin: 0;
+}
+
+p {
+  font-family: var(--font-secondary);
+  margin: 0;
 }
 
 /**** BODY ****/
@@ -288,6 +300,10 @@ main {
   margin-right: 0.5rem;
 }
 
+.card-text {
+  margin-bottom: 0.5rem;
+}
+
 .containerCart {
   display: flex;
   flex-direction: column;
@@ -430,7 +446,7 @@ iframe {
 .offcanvas-body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 2rem);
+  grid-template-rows: repeat(3, 2rem);
   grid-template-areas:
     "product product price price"
     "separator separator separator separator"
@@ -440,6 +456,7 @@ iframe {
   align-content: flex-start;
   justify-items: center;
   align-items: center;
+  gap: 0.5rem;
   background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
 }
 
@@ -467,7 +484,6 @@ iframe {
 
 .btnBuy {
   grid-area: btnBuy;
-  margin-top: 2rem;
 }
 
 /**** FOOTER ****/
@@ -492,7 +508,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
-  gap: 2rem;
+  gap: 1rem;
   grid-template-areas:
     "newsletter"
     "socials"
@@ -505,6 +521,14 @@ iframe {
 
 .socials {
   grid-area: socials;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 2rem);
+  grid-template-areas:
+  "titulo titulo titulo";
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   border-style: solid;
   padding: 1.5rem;
   border-radius: 2rem;
@@ -514,8 +538,9 @@ iframe {
 }
 
 .sectionSocials>div h3 {
+  grid-area: titulo;
+  display: inline-block;
   padding: 0.5rem;
-  vertical-align: middle;
 }
 
 .sectionAbout,
