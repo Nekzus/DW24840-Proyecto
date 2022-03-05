@@ -56,7 +56,12 @@ html {
   font-size: 80%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-primary);
   margin: 0;
 }
@@ -121,16 +126,16 @@ header a:hover {
 }
 
 .btn-outline-success {
-  color: var(--color-orange);
-  border-color: var(--color-orange);
+  color: var(--color-blue);
+  border-color: var(--color-blue);
   box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
   transition: 0.7s;
 }
 
 .btn-outline-success:hover {
   color: var(--color-font-secondary);
-  border-color: var(--color-orange);
-  background-color: var(--color-orange);
+  border-color: var(--color-blue);
+  background-color: var(--color-blue);
 
 }
 
@@ -166,7 +171,7 @@ header a:hover {
   background-color: var(--color-green);
 }
 
-.badge {
+.badgeCart {
   background-color: var(--color-violet);
   color: var(--color-font-primary);
   font-family: var(--font-secondary);
@@ -197,13 +202,14 @@ main {
   text-align: center;
   font-family: var(--font-secondary);
   color: var(--color-font-primary);
+  background-image: linear-gradient(to top, var(--color-bg-primary), var(--color-bg-secondary));
 }
 
 .containerContent {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
   grid-auto-rows: 21.875rem;
-  gap: 2.5rem;
+  gap: 4rem;
   padding: 2rem;
   place-items: center;
   place-content: center space-around;
@@ -257,13 +263,22 @@ main {
 .filters>select {
   width: 18rem;
   height: 2rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-family: var(--font-tertiary);
   color: var(--color-font-primary);
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-primary);
   border: none;
   border-radius: 0.5rem;
   margin: 1rem;
+  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
+}
+
+.filters h4 {
+  color: var(--color-font-secondary);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-green);
+  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
 }
 
 .productCard,
@@ -271,13 +286,13 @@ main {
   display: flex;
   flex-direction: column;
   align-content: center;
-  height: 21.875rem;
+  height: 23.875rem;
   justify-content: space-between;
   align-items: center;
   row-gap: 1rem;
   background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: var(--color-font-primary);
   font-family: var(--font-secondary);
   font-size: 1.2rem;
@@ -286,8 +301,34 @@ main {
   width: min(18.75rem, 100%);
 }
 
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1.875rem 2.6875rem;
+  gap: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  place-items: center;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
 .productCardHome {
   flex: 0 0 auto;
+}
+
+.badgeOff {
+  background-color: var(--color-green);
+  color: var(--color-font-secondary);
+  font-family: var(--font-secondary);
+  left: 80%;
+  top: 11%;
+  border-width: 0.5rem;
+  border-color: var(--color-font-primary);
+  font-size: 1.9rem;
+  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
 }
 
 .productCard:hover,
@@ -303,10 +344,6 @@ main {
   padding: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-}
-
-.card-text {
-  margin-bottom: 0.5rem;
 }
 
 .containerCart {
@@ -351,6 +388,15 @@ main {
   width: min(40rem, 100%);
   height: 100%;
   padding: 1rem;
+}
+
+.formGroup h3 {
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: var(--color-font-secondary);
+  background-color: var(--color-green);
+  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
 }
 
 .form {
@@ -466,9 +512,25 @@ iframe {
 }
 
 .offcanvas-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: " . title title title title title close";
+  justify-content: center;
+  align-content: center;
+  place-items: center;
   background-color: var(--color-violet);
   font-family: var(--font-primary);
   color: var(--color-font-secondary);
+}
+
+.offcanvas-header h5 {
+  grid-area: title;
+}
+
+.offcanvas-header button {
+  grid-area: close;
+  justify-self: end;
 }
 
 .product {
@@ -503,7 +565,7 @@ iframe {
 
 .footerSocials {
   text-align: center;
-  background-color: var(--color-bg-secondary);
+  background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
   padding: 2rem;
   color: var(--color-font-primary);
   font-family: var(--font-secondary);
@@ -530,16 +592,17 @@ iframe {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, 2rem);
   grid-template-areas:
-  "titulo titulo titulo";
+    "titulo titulo titulo";
   justify-content: center;
   align-items: center;
   gap: 1rem;
   border-style: solid;
   padding: 1.5rem;
+  background-image: linear-gradient(to top, var(--color-bg-primary), var(--color-bg-secondary));
   border-radius: 2rem;
   border-width: 0.1rem;
-  border-color: var(--color-green);
-  box-shadow: 0rem 0.0625rem 0.625rem var(--color-green);
+  border-color: var(--color-blue);
+  box-shadow: 0rem 0.0625rem 0.625rem var(--color-blue);
 }
 
 .sectionSocials>div h3 {
@@ -548,9 +611,24 @@ iframe {
   padding: 0.5rem;
 }
 
-.sectionAbout,
+.sectionAbout {
+  background-image: linear-gradient(to top, var(--color-bg-primary), var(--color-bg-secondary));
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
+}
+
 .sectionAbout h3 {
+  color: var(--color-font-secondary);
+  background-color: var(--color-orange);
+  border-radius: 0.5rem;
   padding: 0.5rem;
+  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
+}
+
+.sectionAbout p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .newsletter {
@@ -561,6 +639,7 @@ iframe {
   align-items: center;
   border-style: solid;
   padding: 0.8rem;
+  background-image: linear-gradient(to top, var(--color-bg-primary), var(--color-bg-secondary));
   border-radius: 2rem;
   border-width: 0.1rem;
   border-color: var(--color-violet);
@@ -583,13 +662,20 @@ iframe {
   grid-area: contact;
   border-style: solid;
   padding: 1rem;
+  background-image: linear-gradient(to top, var(--color-bg-primary), var(--color-bg-secondary));
   border-radius: 2rem;
   border-width: 0.1rem;
-  border-color: var(--color-orange);
-  box-shadow: 0rem 0.0625rem 0.625rem var(--color-orange)
+  border-color: var(--color-green);
+  box-shadow: 0rem 0.0625rem 0.625rem var(--color-green)
 }
 
-.sectionSocials i {
+.telephone {
+  font-size: 1rem;
+}
+
+#youtube,
+#facebook,
+#instagram {
   padding: 0.5rem;
   font-size: 2rem;
   color: var(--color-font-primary);
