@@ -4,6 +4,8 @@
 /**** Importación biblioteca animaciones Animate CDN ****/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
+@import url(./animation.css);
+
 /**** Importación biblioteca fuentes CDN ****/
 /* @import url("http://fonts.cdnfonts.com/css/cubano"); */
 /* @import url("http://fonts.cdnfonts.com/css/sofia-pro"); */
@@ -464,8 +466,7 @@ textarea:focus {
     "videoContainer"
     "subtitleMap"
     "mapContainer";
-  justify-content: space-around;
-  align-content: space-around;
+  place-content: center;
 }
 
 .subtitleVideo {

@@ -1,58 +1,56 @@
-@import url(./style.css);
-
 .animationContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 1rem;
     gap: 0.25rem;
     overflow: hidden;
 }
 
-label {
+.animation {
     position: relative;
     width: 4.7rem;
     height: 4.7rem;
 }
 
-label input {
+.animation input {
     appearance: none;
 }
 
-label .face {
+.animation .face {
     position: absolute;
     inset: 0;
-    background: #333;
+    background-color: var(--color-bg-secondary);
     border-radius: 50%;
     cursor: pointer;
     mix-blend-mode: lighten;
     transition: 0.5s;
 }
 
-label input:checked~.face {
-    background: var(--color-pink);
+.animation input:checked~.face {
+    background-color: var(--color-pink);
     z-index: 2;
 }
 
-label:nth-child(even) input:checked~.face {
+.animation:nth-child(even) input:checked~.face {
     background: var(--color-green);
 }
 
-label .face::before {
+.animation .face::before {
     content: '';
     position: absolute;
     top: 1.87rem;
     left: 1.4rem;
     width: 0.47rem;
     height: 0.47rem;
-    background: #111;
+    background-color: var(--color-bg-primary);
     opacity: 0.5;
     border-radius: 50%;
-    box-shadow: 1.4rem 0 0 #111;
+    box-shadow: 1.4rem 0 0 var(--color-bg-primary);
 }
 
-label .face::after {
+.animation .face::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -61,11 +59,11 @@ label .face::after {
     width: 1.25rem;
     height: 0.25rem;
     border-radius: 0.25rem;
-    background: #111;
+    background-color: var(--color-bg-primary);
     opacity: 0.5;
 }
 
-label input:checked~.face::after {
+.animation input:checked~.face::after {
     width: 1.25rem;
     height: 0.625rem;
     border-radius: 0;
