@@ -1,0 +1,58 @@
+.offcanvas-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: " . title title title title title close";
+    justify-content: center;
+    align-content: center;
+    place-items: center;
+    background-color: $color-pink;
+    font-family: $font-primary;
+    color: $color-font-secondary;
+
+    h5 {
+        grid-area: title;
+    }
+
+    button {
+        grid-area: close;
+        justify-self: end;
+    }
+}
+
+.offcanvas-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 2rem);
+    grid-template-areas:
+        "product product price price"
+        "separator separator separator separator"
+        "total total totalPrice totalPrice"
+        "btnBuy btnBuy btnBuy btnBuy";
+    justify-content: center;
+    align-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+
+    .product {
+        grid-area: product;
+    }
+
+    .price {
+        grid-area: price;
+    }
+
+    .total {
+        grid-area: total;
+    }
+
+    .totalPrice {
+        grid-area: totalPrice;
+    }
+
+    .btnBuy {
+        grid-area: btnBuy;
+    }
+}

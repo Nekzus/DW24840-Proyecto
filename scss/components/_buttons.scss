@@ -1,0 +1,42 @@
+
+.btn {
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    .btn-outline-success {
+        color: $color-blue;
+        border-color: $color-blue;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        transition: 0.7s;
+
+        &:hover {
+            color: $color-font-secondary;
+            border-color: $color-blue;
+            background-color: $color-blue;
+        }
+    }
+
+    .btn-outline-info {
+        color: $color-blue;
+        border-color: $color-blue;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        transition: 0.7s;
+
+        &:hover {
+            color: $color-font-secondary;
+            border-color: $color-blue;
+            background-color: $color-blue;
+        }
+    }
+
+    .btnSubmitNews {
+        font-size: 0.8rem;
+        padding: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}

@@ -1,0 +1,77 @@
+header {
+    @include xs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left, $color-bg-primary, $color-bg-secondary);
+        padding: 0.625rem;
+
+        .logoSite {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        .logoSiteNav {
+            display: none;
+        }
+
+        .titleSite {
+            display: none;
+        }
+    }
+
+    @include sm {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "logo title title .";
+        justify-content: center;
+        align-content: center;
+
+        .logo {
+            grid-area: logo;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+        }
+
+        .title {
+            grid-area: title;
+            text-align: center;
+        }
+
+        .title span {
+            display: block;
+        }
+
+        .logoSite {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .logoSiteNav {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .titleSite {
+            display: inline;
+            font-size: 2.5rem;
+        }
+    }
+
+    a {
+        color: $color-font-primary;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-font-primary;
+        }
+    }
+
+    .titleSite {
+        font-family: $font-primary;
+    }
+
+}

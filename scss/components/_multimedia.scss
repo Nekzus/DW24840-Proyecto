@@ -1,0 +1,45 @@
+.multimedia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "subtitleVideo"
+        "videoContainer"
+        "subtitleMap"
+        "mapContainer";
+    place-content: center;
+
+    .subtitleVideo {
+        grid-area: subtitleVideo;
+        margin: 2rem;
+        color: $color-font-secondary;
+        padding: 0.5rem;
+        background-color: $color-violet;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        border-radius: 0.5rem;
+    }
+
+    .videoContainer {
+        grid-area: videoContainer;
+    }
+
+    .subtitleMap {
+        grid-area: subtitleMap;
+        @extend .subtitleVideo;
+    }
+
+    .mapContainer {
+        grid-area: mapContainer;
+    }
+
+    iframe {
+        border-radius: 0.5rem;
+        margin: 3rem;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        grid-area: media;
+
+        @include xs {
+            width: 20rem;
+            height: 15rem;
+        }
+    }
+}
