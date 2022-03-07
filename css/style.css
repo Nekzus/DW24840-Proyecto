@@ -4,6 +4,7 @@
 /**** Importación biblioteca animaciones Animate CDN ****/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
+/**** Importación estilos animacion ****/
 @import url(./animation.css);
 
 /**** Importación biblioteca fuentes CDN ****/
@@ -130,34 +131,6 @@ header a:hover {
   text-align: center;
 }
 
-.btn-outline-success {
-  color: var(--color-blue);
-  border-color: var(--color-blue);
-  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
-  transition: 0.7s;
-}
-
-.btn-outline-success:hover {
-  color: var(--color-font-secondary);
-  border-color: var(--color-blue);
-  background-color: var(--color-blue);
-
-}
-
-.btn-outline-info {
-  color: var(--color-blue);
-  border-color: var(--color-blue);
-  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
-  transition: 0.7s;
-}
-
-.btn-outline-info:hover {
-  color: var(--color-font-secondary);
-  border-color: var(--color-blue);
-  background-color: var(--color-blue);
-
-}
-
 .cartBar {
   display: none;
   font-size: 1.25rem;
@@ -183,6 +156,35 @@ header a:hover {
   font-size: 0.9rem;
 }
 
+/**** BUTTONS ****/
+.btn-outline-success {
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
+  transition: 0.7s;
+}
+
+.btn-outline-success:hover {
+  color: var(--color-font-secondary);
+  border-color: var(--color-blue);
+  background-color: var(--color-blue);
+
+}
+
+.btn-outline-info {
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+  box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
+  transition: 0.7s;
+}
+
+.btn-outline-info:hover {
+  color: var(--color-font-secondary);
+  border-color: var(--color-blue);
+  background-color: var(--color-blue);
+}
+
+/**** CAROUSEL ****/
 .carousel-caption {
   background-color: var(--color-shadow);
   padding: 1rem;
@@ -214,6 +216,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
   grid-auto-rows: 26rem;
+  grid-template-rows: repeat(2, auto);
   gap: 4rem;
   padding: 2rem;
   place-items: center;
@@ -223,10 +226,6 @@ main {
   font-family: var(--font-secondary);
   font-size: 1.2rem;
   border-radius: 0.5rem;
-}
-
-.containerContent {
-  grid-template-rows: repeat(2, auto);
 }
 
 .containerContentHome {
@@ -302,7 +301,7 @@ main {
   font-size: 1.2rem;
   box-shadow: 0rem 0.0625rem 0.625rem var(--color-shadow);
   transition: all 0.7s ease;
-  width: min(18.75rem, 100%);
+  width: 18.75rem;
 }
 
 .card-img-top {
@@ -357,15 +356,6 @@ main {
   margin-right: 0.5rem;
 }
 
-.containerCart {
-  display: flex;
-  flex-direction: column;
-  margin: 5rem;
-  background-image: linear-gradient(var(--color-bg-primary), var(--color-bg-secondary));
-  padding: 5rem;
-  border-radius: 0.5rem;
-}
-
 .containerContentForm {
   display: grid;
   grid-template-columns: auto;
@@ -396,7 +386,7 @@ main {
   background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
   box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
   border-radius: 1rem;
-  width: min(40rem, 100%);
+  width: MIN(40rem, 100%);
   height: 100%;
   padding: 1rem;
 }
@@ -458,6 +448,7 @@ textarea:focus {
   margin-right: 0.5em;
 }
 
+/**** MULTIMEDIA ****/
 .multimedia {
   display: grid;
   grid-template-columns: 1fr;
@@ -503,6 +494,7 @@ iframe {
   box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
   grid-area: media;
 }
+
 
 .offcanvas-body {
   display: grid;
@@ -570,8 +562,9 @@ footer {
   grid-template-columns: 1fr;
   place-content: center;
   align-items: center;
-  
+
 }
+
 .footerCopyright {
   background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
   padding: 1.5rem;
@@ -741,10 +734,6 @@ footer {
     display: none;
   }
 
-  .listInline {
-    flex-direction: column;
-  }
-
   .subtitle {
     justify-self: center;
     align-self: center;
@@ -807,12 +796,6 @@ footer {
   .contentSubtitle {
     text-align: start;
     margin-left: 2rem;
-  }
-
-  .listInline {
-    height: 2rem;
-    flex-direction: row;
-    justify-content: space-evenly;
   }
 
   .subtitle {
