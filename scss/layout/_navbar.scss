@@ -1,4 +1,3 @@
-
 .navbar {
     background-color: $color-shadow-hover;
     font-family: $font-primary;
@@ -8,6 +7,12 @@
     box-shadow: 0.5rem 0.5rem 2rem $color-shadow;
     position: sticky;
     top: 0;
+
+    @include lg {
+        .cart {
+            display: none;
+        }
+    }
 
     .nav-link {
         color: $color-font-primary;
@@ -21,14 +26,18 @@
             color: $color-font-secondary !important;
         }
 
+    }
+    
+    .navbar-collapse {
+        text-align: center;
         .cartBar {
             display: none;
             font-size: 1.25rem;
+    
+            @include lg {
+                display: block;
+            }
         }
-    }
-
-    .navbar-collapse {
-        text-align: center;
     }
 
     .cartLink {

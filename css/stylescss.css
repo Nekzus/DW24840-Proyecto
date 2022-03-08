@@ -22,9 +22,13 @@
   html {
     font-size: 80%; } }
 
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   html {
     font-size: 100%; } }
+
+@media (min-width: 3840px) {
+  html {
+    font-size: 120%; } }
 
 /* @import url("http://fonts.cdnfonts.com/css/cubano"); */
 /* @import url("http://fonts.cdnfonts.com/css/sofia-pro"); */
@@ -120,7 +124,7 @@ body {
     header .titleSite {
       display: none; } }
 
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -147,6 +151,10 @@ body {
       display: inline;
       font-size: 2.5rem; } }
 
+@media (min-width: 768px) {
+  header .titleSite {
+    font-size: 3.5rem; } }
+
 header a {
   color: #F5F5F5;
   text-decoration: none; }
@@ -171,6 +179,9 @@ main {
   box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0; }
+  @media (min-width: 992px) {
+    .navbar .cart {
+      display: none; } }
   .navbar .nav-link {
     color: #F5F5F5;
     text-decoration: none;
@@ -180,11 +191,14 @@ main {
       padding: 0.5rem;
       background-color: #01ff5f;
       color: #2A2E34 !important; }
-    .navbar .nav-link .cartBar {
-      display: none;
-      font-size: 1.25rem; }
   .navbar .navbar-collapse {
     text-align: center; }
+    .navbar .navbar-collapse .cartBar {
+      display: none;
+      font-size: 1.25rem; }
+      @media (min-width: 992px) {
+        .navbar .navbar-collapse .cartBar {
+          display: block; } }
   .navbar .cartLink {
     color: #F5F5F5;
     font-size: 1.7rem;
@@ -211,6 +225,10 @@ main {
   box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
   background-color: #9166CC;
   border-radius: 0.5rem; }
+  @media (min-width: 768px) {
+    .subtitleForm {
+      text-align: start;
+      margin-left: 2rem; } }
 
 .formGroup {
   grid-area: form;
@@ -367,6 +385,11 @@ footer {
         box-shadow: 0rem 0.0625rem 0.625rem #01ff5f; }
         footer .footerSocials .sectionSocials .contact .telephone {
           font-size: 1rem; }
+      @media (min-width: 768px) {
+        footer .footerSocials .sectionSocials {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: auto;
+          grid-template-areas: "newsletter contact socials"; } }
   footer .footerCopyright {
     background-image: linear-gradient(to bottom, #12181B, #2A2E35);
     padding: 1.5rem;
@@ -466,7 +489,7 @@ footer {
       text-align: center;
       margin-bottom: 0;
       font-family: "Cubano", sans-serif; }
-      @media (min-width: 480px) {
+      @media (min-width: 768px) {
         .containerContent .subtitle .contentSubtitle {
           text-align: start;
           margin-left: 2rem; } }
@@ -474,7 +497,7 @@ footer {
       .containerContent .subtitle {
         justify-self: center;
         align-self: center; } }
-    @media (min-width: 480px) {
+    @media (min-width: 576px) {
       .containerContent .subtitle {
         justify-self: normal; } }
 
@@ -514,7 +537,7 @@ footer {
       text-align: center;
       margin-bottom: 0;
       font-family: "Cubano", sans-serif; }
-      @media (min-width: 480px) {
+      @media (min-width: 768px) {
         .containerContentHome .subtitle .contentSubtitle {
           text-align: start;
           margin-left: 2rem; } }
@@ -522,7 +545,7 @@ footer {
       .containerContentHome .subtitle {
         justify-self: center;
         align-self: center; } }
-    @media (min-width: 480px) {
+    @media (min-width: 576px) {
       .containerContentHome .subtitle {
         justify-self: normal; } }
 
@@ -565,6 +588,18 @@ footer {
       .multimedia iframe {
         width: 20rem;
         height: 15rem; } }
+    @media (min-width: 576px) {
+      .multimedia iframe {
+        width: 35rem;
+        height: 20rem; } }
+    @media (min-width: 768px) {
+      .multimedia iframe {
+        width: 45rem;
+        height: 25rem; } }
+    @media (min-width: 992px) {
+      .multimedia iframe {
+        width: 65rem;
+        height: 45rem; } }
 
 .offcanvas-header {
   display: grid;

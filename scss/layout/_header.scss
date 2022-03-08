@@ -61,6 +61,12 @@ header {
         }
     }
 
+    @include md {
+        .titleSite {
+            font-size: 3.5rem;
+        }
+    }
+
     a {
         color: $color-font-primary;
         text-decoration: none;

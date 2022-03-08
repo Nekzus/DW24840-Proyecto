@@ -131,6 +131,13 @@ footer {
                     font-size: 1rem;
                 }
             }
+
+            @include md {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "newsletter contact socials";
+            }
         }
     }
 

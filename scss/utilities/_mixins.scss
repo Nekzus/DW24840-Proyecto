@@ -14,7 +14,7 @@
             margin-bottom: 0;
             font-family: $font-primary;
 
-            @include sm {
+            @include md {
                 text-align: start;
                 margin-left: 2rem;
             }
@@ -29,7 +29,6 @@
         }
     }
 }
-
 
 @mixin card() {
     display: flex;

@@ -14,4 +14,8 @@ html {
     @include sm {
         font-size: 100%;
     }
+
+    @include breakpoint($bp: 3840px) {
+        font-size: 120%;
+    }
 }

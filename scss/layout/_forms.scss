@@ -11,6 +11,10 @@
     box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
     background-color: $color-violet;
     border-radius: 0.5rem;
+    @include md {
+        text-align: start;
+        margin-left: 2rem;
+    }
 }
 
 .formGroup {
