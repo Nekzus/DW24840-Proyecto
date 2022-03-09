@@ -1,4 +1,4 @@
-
+// FORMS
 .centerItemsGrid {
     justify-self: center;
     align-self: center;
@@ -69,8 +69,8 @@
             font-weight: bold;
 
             &:focus {
-                background-color: $color-bg-secondary !important;
-                color: $color-font-primary !important;
+                background-color: $color-bg-secondary;
+                color: $color-font-primary;
             }
         }
     }

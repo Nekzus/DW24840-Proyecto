@@ -1,3 +1,4 @@
+// MIXINS
 @mixin subtitle($bg-color: $color-violet, $ft-color: $color-font-secondary) {
     .subtitle {
         grid-column: 1/-1;

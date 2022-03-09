@@ -1,3 +1,5 @@
+//CARDS
+@import '../utilities/mixins';
 
 .productCard {
     @include card();

@@ -1,0 +1,20 @@
+// @import './vendors/bootstrap'; //TODO:PRUEBAS SOBRE CSS BOOTSTRAP NODE_MODULES
+@import './base/fonts';
+@import './base/reset';
+@import './components/animations';
+@import './components/buttons';
+@import './components/carousel';
+@import './components/cards';
+@import './components/containers';
+@import './components/navbar';
+@import './components/multimedia';
+@import './components/offcanvascart';
+@import './layout/body';
+@import './layout/footer';
+@import './layout/forms';
+@import './layout/header';
+@import './layout/main';
+@import './utilities/breakpoints';
+@import './utilities/mixins';
+@import './utilities/variables';
+@import './vendors/cdn';

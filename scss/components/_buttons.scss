@@ -1,4 +1,4 @@
-
+// BUTTONS
 .btn {
     text-transform: uppercase;
     font-family: $font-secondary;
@@ -21,16 +21,7 @@
     }
 
     .btn-outline-info {
-        color: $color-blue;
-        border-color: $color-blue;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
-        transition: 0.7s;
-
-        &:hover {
-            color: $color-font-secondary;
-            border-color: $color-blue;
-            background-color: $color-blue;
-        }
+        @extend .btn-outline-success;
     }
 
     .btnSubmitNews {

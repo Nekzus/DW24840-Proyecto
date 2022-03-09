@@ -1,3 +1,5 @@
+// NAVBAR
+
 .navbar {
     background-color: $color-shadow-hover;
     font-family: $font-primary;
@@ -14,26 +16,29 @@
         }
     }
 
-    .nav-link {
-        color: $color-font-primary;
-        text-decoration: none;
-        border-radius: 0.5rem;
-        transition: 0.7s;
+    .navbar-nav {
+        .nav-link {
+            color: $color-font-primary;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: 0.7s;
 
-        &:hover {
-            padding: 0.5rem;
-            background-color: $color-green;
-            color: $color-font-secondary !important;
+            &:hover {
+                padding: 0.5rem;
+                background-color: $color-green;
+                color: $color-font-secondary;
+            }
+
         }
-
     }
-    
+
     .navbar-collapse {
         text-align: center;
+
         .cartBar {
             display: none;
             font-size: 1.25rem;
-    
+
             @include lg {
                 display: block;
             }
