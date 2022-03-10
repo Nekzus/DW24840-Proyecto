@@ -1,11 +1,14 @@
+@use '../utilities/variables'as varhd;
+@use '../utilities/breakpoints'as bphd;
+
 // HEADER
 header {
-    @include xs {
+    @include bphd.xs {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(to left, $color-bg-primary, $color-bg-secondary);
+        background-image: linear-gradient(to left, varhd.$color-bg-primary, varhd.$color-bg-secondary);
         padding: 0.625rem;
 
         .logoSite {
@@ -22,7 +25,7 @@ header {
         }
     }
 
-    @include sm {
+    @include bphd.sm {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "logo title title .";
@@ -62,23 +65,23 @@ header {
         }
     }
 
-    @include md {
+    @include bphd.md {
         .titleSite {
             font-size: 3.5rem;
         }
     }
 
     a {
-        color: $color-font-primary;
+        color: varhd.$color-font-primary;
         text-decoration: none;
 
         &:hover {
-            color: $color-font-primary;
+            color: varhd.$color-font-primary;
         }
     }
 
     .titleSite {
-        font-family: $font-primary;
+        font-family: varhd.$font-primary;
     }
 
 }

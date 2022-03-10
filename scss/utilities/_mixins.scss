@@ -1,31 +1,35 @@
+@use '../utilities/variables'as varm;
+@use '../utilities/breakpoints'as bpm;
+
 // MIXINS
-@mixin subtitle($bg-color: $color-violet, $ft-color: $color-font-secondary) {
+@mixin subtitle($bg-color: varm.$color-violet, $ft-color: varm.$color-font-secondary) {
     .subtitle {
         grid-column: 1/-1;
         grid-template-rows: 3.125rem;
         color: $ft-color;
         padding: 1rem;
         background-color: $bg-color;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem varm.$color-shadow;
         border-radius: 0.5rem;
 
         .contentSubtitle {
             display: block;
             text-align: center;
             margin-bottom: 0;
-            font-family: $font-primary;
+            font-family: varm.$font-primary;
 
-            @include md {
+            @include bpm.md {
                 text-align: start;
                 margin-left: 2rem;
             }
         }
 
-        @include xs {
+        @include bpm.xs {
             justify-self: center;
             align-self: center;
         }
-        @include sm {
+
+        @include bpm.sm {
             justify-self: normal;
         }
     }
@@ -39,12 +43,12 @@
     justify-content: space-between;
     align-items: center;
     row-gap: 1rem;
-    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to bottom, varm.$color-bg-primary, varm.$color-bg-secondary);
     border-radius: 1rem;
-    color: $color-font-primary;
-    font-family: $font-secondary;
+    color: varm.$color-font-primary;
+    font-family: varm.$font-secondary;
     font-size: 1.2rem;
-    box-shadow: 0rem 0.0625rem 0.625rem $color-shadow;
+    box-shadow: 0rem 0.0625rem 0.625rem varm.$color-shadow;
     transition: all 0.7s ease;
     width: 18.75rem;
 
@@ -70,13 +74,13 @@
     }
 
     &:hover {
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem varm.$color-shadow;
         transform: translateY(-3%);
     }
 
 }
 
-@mixin social-icon ($hv-color:'', $ft-color: $color-font-primary) {
+@mixin social-icon ($hv-color:'', $ft-color: varm.$color-font-primary) {
     padding: 0.5rem;
     font-size: 2rem;
     color: $ft-color;

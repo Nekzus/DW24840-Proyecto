@@ -1,3 +1,5 @@
+@use '../utilities/variables'as varof;
+
 // OFFCANVAS CARRITO
 .offcanvas-header {
     display: grid;
@@ -7,9 +9,9 @@
     justify-content: center;
     align-content: center;
     place-items: center;
-    background-color: $color-pink;
-    font-family: $font-primary;
-    color: $color-font-secondary;
+    background-color: varof.$color-pink;
+    font-family: varof.$font-primary;
+    color: varof.$color-font-secondary;
 
     h5 {
         grid-area: title;
@@ -35,7 +37,7 @@
     justify-items: center;
     align-items: center;
     gap: 0.5rem;
-    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to bottom, varof.$color-bg-primary, varof.$color-bg-secondary);
 
     .product {
         grid-area: product;

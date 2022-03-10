@@ -1,6 +1,7 @@
-// CONTAINERS
-@import'../utilities/mixins';
+@use '../utilities/variables'as varco;
+@use '../utilities/mixins'as mixco;
 
+// CONTAINERS
 .containerContent {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
@@ -11,8 +12,8 @@
     place-items: center;
     place-content: center space-around;
     justify-items: center;
-    color: $color-font-primary;
-    font-family: $font-secondary;
+    color: varco.$color-font-primary;
+    font-family: varco.$font-secondary;
     font-size: 1.2rem;
     border-radius: 0.5rem;
 
@@ -23,25 +24,25 @@
             width: 18rem;
             height: 2rem;
             font-size: 0.95rem;
-            font-family: $font-tertiary;
-            color: $color-font-primary;
-            background-color: $color-bg-primary;
+            font-family: varco.$font-tertiary;
+            color: varco.$color-font-primary;
+            background-color: varco.$color-bg-primary;
             border: none;
             border-radius: 0.5rem;
             margin: 1rem;
-            box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+            box-shadow: 0.3125rem 0.3125rem 1.25rem varco.$color-shadow;
         }
 
         h4 {
-            color: $color-font-secondary;
+            color: varco.$color-font-secondary;
             padding: 0.5rem;
             border-radius: 0.5rem;
-            background-color: $color-green;
-            box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+            background-color: varco.$color-green;
+            box-shadow: 0.3125rem 0.3125rem 1.25rem varco.$color-shadow;
         }
     }
 
-    @include subtitle();
+    @include mixco.subtitle();
 }
 
 .containerContentHome {
@@ -61,20 +62,20 @@
             flex: 0 0 auto;
 
             .badgeOff {
-                background-color: $color-green;
-                color: $color-font-secondary;
-                font-family: $font-secondary;
+                background-color: varco.$color-green;
+                color: varco.$color-font-secondary;
+                font-family: varco.$font-secondary;
                 left: 80%;
                 top: 11%;
                 border-width: 0.5rem;
-                border-color: $color-font-primary;
+                border-color: varco.$color-font-primary;
                 font-size: 1.9rem;
-                box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+                box-shadow: 0.3125rem 0.3125rem 1.25rem varco.$color-shadow;
             }
         }
     }
 
-    @include subtitle();
+    @include mixco.subtitle();
 }
 
 
@@ -86,8 +87,8 @@
         "form";
     gap: 2rem;
     padding: 2rem;
-    color: $color-font-primary;
-    font-family: $font-secondary;
+    color: varco.$color-font-primary;
+    font-family: varco.$font-secondary;
     font-size: 1.2rem;
     border-radius: 0.5rem;
 }

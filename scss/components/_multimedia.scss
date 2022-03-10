@@ -1,3 +1,6 @@
+@use '../utilities/variables'as varmu;
+@use '../utilities/breakpoints'as bpmu;
+
 // MULTIMEDIA
 .multimedia {
     display: grid;
@@ -12,10 +15,10 @@
     .subtitleVideo {
         grid-area: subtitleVideo;
         margin: 2rem;
-        color: $color-font-secondary;
+        color: varmu.$color-font-secondary;
         padding: 0.5rem;
-        background-color: $color-violet;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        background-color: varmu.$color-violet;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem varmu.$color-shadow;
         border-radius: 0.5rem;
     }
 
@@ -35,25 +38,25 @@
     iframe {
         border-radius: 0.5rem;
         margin: 3rem;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem varmu.$color-shadow;
         grid-area: media;
 
-        @include xs {
+        @include bpmu.xs {
             width: 20rem;
             height: 15rem;
         }
 
-        @include sm {
+        @include bpmu.sm {
             width: 35rem;
             height: 20rem;
         }
 
-        @include md {
+        @include bpmu.md {
             width: 45rem;
             height: 25rem;
         }
 
-        @include lg {
+        @include bpmu.lg {
             width: 65rem;
             height: 45rem;
         }

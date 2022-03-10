@@ -1,6 +1,6 @@
-// ANIMACION FACE
-@import '../utilities/variables';
+@use '../utilities/variables'as clra;
 
+// ANIMACION FACE
 .animationContainer {
     display: flex;
     justify-content: space-around;
@@ -22,7 +22,7 @@
         .face {
             position: absolute;
             inset: 0;
-            background-color: $color-bg-secondary;
+            background-color: clra.$color-bg-secondary;
             border-radius: 50%;
             cursor: pointer;
             mix-blend-mode: lighten;
@@ -35,10 +35,10 @@
                 left: 1.4rem;
                 width: 0.47rem;
                 height: 0.47rem;
-                background-color: $color-bg-primary;
+                background-color: clra.$color-bg-primary;
                 opacity: 0.5;
                 border-radius: 50%;
-                box-shadow: 1.4rem 0 0 $color-bg-primary;
+                box-shadow: 1.4rem 0 0 clra.$color-bg-primary;
             }
 
             &::after {
@@ -50,13 +50,13 @@
                 width: 1.25rem;
                 height: 0.25rem;
                 border-radius: 0.25rem;
-                background-color: $color-bg-primary;
+                background-color: clra.$color-bg-primary;
                 opacity: 0.5;
             }
         }
 
         input:checked~.face {
-            background-color: $color-pink;
+            background-color: clra.$color-pink;
             z-index: 2;
 
             &::after {
@@ -70,7 +70,7 @@
         }
 
         &:nth-child(even) input:checked~.face {
-            background: $color-green;
+            background: clra.$color-green;
         }
     }
 }

@@ -1,3 +1,5 @@
+@use '../utilities/variables'as varbo;
+
 // BODY
 body {
 
@@ -7,20 +9,20 @@ body {
     h4,
     h5,
     h6 {
-        font-family: $font-primary;
+        font-family: varbo.$font-primary;
         margin: 0;
     }
 
     p {
-        font-family: $font-secondary;
+        font-family: varbo.$font-secondary;
         margin: 0;
     }
 
-    background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
-    color: $color-font-primary;
+    background-image: linear-gradient(to top, varbo.$color-bg-primary, varbo.$color-bg-secondary);
+    color: varbo.$color-font-primary;
 
     input:focus {
-        background-color: $color-bg-secondary !important;
-        color: $color-font-primary !important;
+        background-color: varbo.$color-bg-secondary;
+        color: varbo.$color-font-primary;
     }
 }

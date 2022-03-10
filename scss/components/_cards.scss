@@ -1,10 +1,10 @@
-//CARDS
-@import '../utilities/mixins';
+@use '../utilities/mixins'as mixc;
 
+//CARDS
 .productCard {
-    @include card();
+    @include mixc.card();
 }
 
 .productCardHome {
-    @include card();
-    }
+    @include mixc.card();
+}

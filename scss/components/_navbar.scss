@@ -1,16 +1,18 @@
-// NAVBAR
+@use '../utilities/variables'as varna;
+@use '../utilities/breakpoints'as bpna;
 
+// NAVBAR
 .navbar {
-    background-color: $color-shadow-hover;
-    font-family: $font-primary;
+    background-color: varna.$color-shadow-hover;
+    font-family: varna.$font-primary;
     font-size: 1.2rem;
     padding: 1rem;
     z-index: 10;
-    box-shadow: 0.5rem 0.5rem 2rem $color-shadow;
+    box-shadow: 0.5rem 0.5rem 2rem varna.$color-shadow;
     position: sticky;
     top: 0;
 
-    @include lg {
+    @include bpna.lg {
         .cart {
             display: none;
         }
@@ -18,15 +20,15 @@
 
     .navbar-nav {
         .nav-link {
-            color: $color-font-primary;
+            color: varna.$color-font-primary;
             text-decoration: none;
             border-radius: 0.5rem;
             transition: 0.7s;
 
             &:hover {
                 padding: 0.5rem;
-                background-color: $color-green;
-                color: $color-font-secondary;
+                background-color: varna.$color-green;
+                color: varna.$color-font-secondary;
             }
 
         }
@@ -39,29 +41,29 @@
             display: none;
             font-size: 1.25rem;
 
-            @include lg {
+            @include bpna.lg {
                 display: block;
             }
         }
     }
 
     .cartLink {
-        color: $color-font-primary;
+        color: varna.$color-font-primary;
         font-size: 1.7rem;
         padding: 0.25rem;
         transition: 0.7s;
         border-radius: 0.5rem;
 
         &:hover {
-            color: $color-bg-primary;
-            background-color: $color-green;
+            color: varna.$color-bg-primary;
+            background-color: varna.$color-green;
         }
     }
 
     .badgeCart {
-        background-color: $color-pink;
-        color: $color-font-primary;
-        font-family: $font-secondary;
+        background-color: varna.$color-pink;
+        color: varna.$color-font-primary;
+        font-family: varna.$font-secondary;
         font-size: 0.9rem;
     }
 }

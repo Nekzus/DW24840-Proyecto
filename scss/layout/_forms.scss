@@ -1,3 +1,6 @@
+@use '../utilities/variables'as varfor;
+@use '../utilities/breakpoints'as bpfor;
+
 // FORMS
 .centerItemsGrid {
     justify-self: center;
@@ -6,12 +9,13 @@
 
 .subtitleForm {
     grid-area: subtitleForm;
-    color: $color-font-secondary;
+    color: varfor.$color-font-secondary;
     padding: 1rem;
-    box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
-    background-color: $color-violet;
+    box-shadow: 0.3125rem 0.3125rem 1.25rem varfor.$color-shadow;
+    background-color: varfor.$color-violet;
     border-radius: 0.5rem;
-    @include md {
+
+    @include bpfor.md {
         text-align: start;
         margin-left: 2rem;
     }
@@ -21,8 +25,8 @@
     grid-area: form;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
-    box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+    background-image: linear-gradient(to bottom, varfor.$color-bg-primary, varfor.$color-bg-secondary);
+    box-shadow: 0.3125rem 0.3125rem 1.25rem varfor.$color-shadow;
     border-radius: 1rem;
     width: MIN(40rem, 100%);
     height: 100%;
@@ -32,9 +36,9 @@
         font-size: 1.5rem;
         border-radius: 0.5rem;
         padding: 0.5rem;
-        color: $color-font-secondary;
-        background-color: $color-green;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        color: varfor.$color-font-secondary;
+        background-color: varfor.$color-green;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem varfor.$color-shadow;
     }
 
     .form {
@@ -50,7 +54,7 @@
             margin-bottom: 0.5rem;
 
             a {
-                color: $color-green;
+                color: varfor.$color-green;
                 text-decoration: none;
             }
         }
@@ -64,13 +68,13 @@
             width: 100%;
             padding: 0.4rem;
             border-radius: 0.5rem;
-            font-family: $font-secondary;
+            font-family: varfor.$font-secondary;
             font-size: 1rem;
             font-weight: bold;
 
             &:focus {
-                background-color: $color-bg-secondary;
-                color: $color-font-primary;
+                background-color: varfor.$color-bg-secondary;
+                color: varfor.$color-font-primary;
             }
         }
     }

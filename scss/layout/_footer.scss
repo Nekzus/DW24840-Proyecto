@@ -1,6 +1,8 @@
-// FOOTER
-@import '../utilities/mixins';
+@use '../utilities/variables'as varfo;
+@use '../utilities/mixins'as mixfo;
+@use '../utilities/breakpoints'as bpfo;
 
+// FOOTER
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -14,23 +16,23 @@ footer {
         place-items: center;
         row-gap: 2rem;
         text-align: center;
-        background-image: linear-gradient(to top, var$color-bg-primary, $color-bg-secondary);
+        background-image: linear-gradient(to top, varfo.$color-bg-primary, varfo.$color-bg-secondary);
         padding: 2rem;
-        color: $color-font-primary;
-        font-family: $font-secondary;
+        color: varfo.$color-font-primary;
+        font-family: varfo.$font-secondary;
 
         .sectionAbout {
-            background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+            background-image: linear-gradient(to bottom, varfo.$color-bg-primary, varfo.$color-bg-secondary);
             padding: 1.5rem;
             border-radius: 1rem;
-            box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+            box-shadow: 0.3125rem 0.3125rem 1.25rem varfo.$color-shadow;
 
             h3 {
-                color: $color-font-secondary;
-                background-color: $color-pink;
+                color: varfo.$color-font-secondary;
+                background-color: varfo.$color-pink;
                 border-radius: 0.5rem;
                 padding: 0.5rem;
-                box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+                box-shadow: 0.3125rem 0.3125rem 1.25rem varfo.$color-shadow;
             }
 
             p {
@@ -67,11 +69,11 @@ footer {
                 align-items: center;
                 border-style: solid;
                 padding: 0.8rem;
-                background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+                background-image: linear-gradient(to top, varfo.$color-bg-primary, varfo.$color-bg-secondary);
                 border-radius: 2rem;
                 border-width: 0.1rem;
-                border-color: $color-violet;
-                box-shadow: 0rem 0.0625rem 0.625rem $color-violet;
+                border-color: varfo.$color-violet;
+                box-shadow: 0rem 0.0625rem 0.625rem varfo.$color-violet;
 
                 form {
                     display: flex;
@@ -98,22 +100,22 @@ footer {
                 gap: 1rem;
                 border-style: solid;
                 padding: 1.5rem;
-                background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+                background-image: linear-gradient(to top, varfo.$color-bg-primary, varfo.$color-bg-secondary);
                 border-radius: 2rem;
                 border-width: 0.1rem;
-                border-color: $color-blue;
-                box-shadow: 0rem 0.0625rem 0.625rem $color-blue;
+                border-color: varfo.$color-blue;
+                box-shadow: 0rem 0.0625rem 0.625rem varfo.$color-blue;
 
                 #instagram {
-                    @include social-icon($hv-color: $color-instagram)
+                    @include mixfo.social-icon($hv-color: varfo.$color-instagram)
                 }
 
                 #youtube {
-                    @include social-icon($hv-color: $color-youtube)
+                    @include mixfo.social-icon($hv-color: varfo.$color-youtube)
                 }
 
                 #facebook {
-                    @include social-icon($hv-color: $color-facebook)
+                    @include mixfo.social-icon($hv-color: varfo.$color-facebook)
                 }
 
             }
@@ -122,18 +124,18 @@ footer {
                 grid-area: contact;
                 border-style: solid;
                 padding: 1rem;
-                background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+                background-image: linear-gradient(to top, varfo.$color-bg-primary, varfo.$color-bg-secondary);
                 border-radius: 2rem;
                 border-width: 0.1rem;
-                border-color: $color-green;
-                box-shadow: 0rem 0.0625rem 0.625rem $color-green;
+                border-color: varfo.$color-green;
+                box-shadow: 0rem 0.0625rem 0.625rem varfo.$color-green;
 
                 .telephone {
                     font-size: 1rem;
                 }
             }
 
-            @include md {
+            @include bpfo.md {
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: auto;
                 grid-template-areas:
@@ -143,11 +145,11 @@ footer {
     }
 
     .footerCopyright {
-        background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+        background-image: linear-gradient(to bottom, varfo.$color-bg-primary, varfo.$color-bg-secondary);
         padding: 1.5rem;
         text-align: center;
-        color: $color-font-primary;
-        font-family: $font-secondary;
+        color: varfo.$color-font-primary;
+        font-family: varfo.$font-secondary;
         font-size: 1rem;
     }
 
