@@ -1,35 +1,36 @@
-@use '../utilities/variables'as clrb;
+
+@use "../utilities/variables" as *;
 
 // BUTTONS
 .btn {
-    text-transform: uppercase;
-    font-family: clrb.$font-secondary;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 
-    .btn-outline-success {
-        color: clrb.$color-blue;
-        border-color: clrb.$color-blue;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem clrb.$color-shadow;
-        transition: 0.7s;
+  .btn-outline-success {
+    color: $color-blue;
+    border-color: $color-blue;
+    box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+    transition: 0.7s;
 
-        &:hover {
-            color: clrb.$color-font-secondary;
-            border-color: clrb.$color-blue;
-            background-color: clrb.$color-blue;
-        }
+    &:hover {
+      color: $color-font-secondary;
+      border-color: $color-blue;
+      background-color: $color-blue;
     }
+  }
 
-    .btn-outline-info {
-        @extend .btn-outline-success;
-    }
+  .btn-outline-info {
+    @extend .btn-outline-success;
+  }
 
-    .btnSubmitNews {
-        font-size: 0.8rem;
-        padding: 0.5em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    }
+  .btnSubmitNews {
+    font-size: 0.8rem;
+    padding: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
 }

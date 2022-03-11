@@ -1,10 +1,11 @@
-@use '../utilities/mixins'as mixc;
+
+@use "../utilities/mixins" as *;
 
 //CARDS
 .productCard {
-    @include mixc.card();
+  @include card();
 }
 
 .productCardHome {
-    @include mixc.card();
+  @include card();
 }

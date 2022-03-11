@@ -1,23 +1,24 @@
+
 // RESET DE VALORES
 
-@use '../utilities/breakpoints'as bpht;
+@use "../utilities/breakpoints" as *;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    @include bpht.xs {
-        font-size: 80%;
-    }
+  @include xs {
+    font-size: 80%;
+  }
 
-    @include bpht.sm {
-        font-size: 100%;
-    }
+  @include sm {
+    font-size: 100%;
+  }
 
-    @include bpht.breakpoint($bp: 3840px) {
-        font-size: 120%;
-    }
+  @include breakpoint($bp: 3840px) {
+    font-size: 120%;
+  }
 }

@@ -1,9 +1,14 @@
-@use '../utilities/variables'as varma;
+
+@use "../utilities/variables" as *;
 
 // MAIN
 main {
-    text-align: center;
-    font-family: varma.$font-secondary;
-    color: varma.$color-font-primary;
-    background-image: linear-gradient(to top, varma.$color-bg-primary, varma.$color-bg-secondary);
+  text-align: center;
+  font-family: $font-secondary;
+  color: $color-font-primary;
+  background-image: linear-gradient(
+    to top,
+    $color-bg-primary,
+    $color-bg-secondary
+  );
 }

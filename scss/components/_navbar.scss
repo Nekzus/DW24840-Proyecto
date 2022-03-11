@@ -1,77 +1,76 @@
-@use '../utilities/variables'as varna;
-@use '../utilities/mixins'as mixn;
-@use '../utilities/breakpoints'as bpna;
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as mix;
+@use "../utilities/breakpoints" as bp;
 
 // NAVBAR
 .navbar {
-    background-color: varna.$color-shadow-hover;
-    font-family: varna.$font-primary;
-    font-size: 1.2rem;
-    padding: 1rem;
-    z-index: 10;
-    box-shadow: 0.5rem 0.5rem 2rem varna.$color-shadow;
-    position: sticky;
-    top: 0;
+  background-color: $color-shadow-hover;
+  font-family: $font-primary;
+  font-size: 1.2rem;
+  padding: 1rem;
+  z-index: 10;
+  box-shadow: 0.5rem 0.5rem 2rem $color-shadow;
+  position: sticky;
+  top: 0;
 
-    @include bpna.lg {
-        .cart {
-            display: none;
-        }
+  @include bp.lg {
+    .cart {
+      display: none;
     }
+  }
 
-    .navbar-nav {
-        .nav-link {
-            color: varna.$color-font-primary;
-            text-decoration: none;
-            border-radius: 0.5rem;
-            transition: 0.7s;
+  .navbar-nav {
+    .nav-link {
+      color: $color-font-primary;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: 0.7s;
 
-            &:hover {
-                padding: 0.5rem;
-                background-color: varna.$color-green;
-                color: varna.$color-font-secondary;
-            }
-
-        }
-
+      &:hover {
+        padding: 0.5rem;
+        background-color: $color-green;
+        color: $color-font-secondary;
+      }
     }
+  }
 
-    form {
-        input:focus {
-            @include mixn.input-focus;
-        }
+  form {
+    input:focus {
+      @include mix.input-focus;
     }
+  }
 
-    .navbar-collapse {
-        text-align: center;
+  .navbar-collapse {
+    text-align: center;
 
-        .cartBar {
-            display: none;
-            font-size: 1.25rem;
+    .cartBar {
+      display: none;
+      font-size: 1.25rem;
 
-            @include bpna.lg {
-                display: block;
-            }
-        }
+      @include bp.lg {
+        display: block;
+      }
     }
+  }
 
-    .cartLink {
-        color: varna.$color-font-primary;
-        font-size: 1.7rem;
-        padding: 0.25rem;
-        transition: 0.7s;
-        border-radius: 0.5rem;
+  .cartLink {
+    color: $color-font-primary;
+    font-size: 1.7rem;
+    padding: 0.25rem;
+    transition: 0.7s;
+    border-radius: 0.5rem;
 
-        &:hover {
-            color: varna.$color-bg-primary;
-            background-color: varna.$color-green;
-        }
+    &:hover {
+      color: $color-bg-primary;
+      background-color: $color-green;
     }
+  }
 
-    .badgeCart {
-        background-color: varna.$color-pink;
-        color: varna.$color-font-primary;
-        font-family: varna.$font-secondary;
-        font-size: 0.9rem;
-    }
+  .badgeCart {
+    background-color: $color-pink;
+    color: $color-font-primary;
+    font-family: $font-secondary;
+    font-size: 0.9rem;
+  }
 }

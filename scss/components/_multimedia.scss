@@ -1,75 +1,76 @@
-@use '../utilities/variables'as varmu;
-@use '../utilities/breakpoints'as bpmu;
+
+@use "../utilities/variables" as *;
+@use "../utilities/breakpoints" as bp;
 
 // MULTIMEDIA
 .multimedia {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "subtitleVideo"
-        "videoContainer"
-        "subtitleMap"
-        "mapContainer";
-    place-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "subtitleVideo"
+    "videoContainer"
+    "subtitleMap"
+    "mapContainer";
+  place-content: center;
 
-    .subtitleVideo {
-        grid-area: subtitleVideo;
-        margin: 2rem;
-        color: varmu.$color-font-secondary;
-        padding: 1rem;
-        background-color: varmu.$color-violet;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem varmu.$color-shadow;
-        border-radius: 0.5rem;
-        .contentSubtitle {
-            display: block;
-            text-align: center;
-            margin-bottom: 0;
-            font-family: varmu.$font-primary;
+  .subtitleVideo {
+    grid-area: subtitleVideo;
+    margin: 2rem;
+    color: $color-font-secondary;
+    padding: 1rem;
+    background-color: $color-violet;
+    box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+    border-radius: 0.5rem;
+    .contentSubtitle {
+      display: block;
+      text-align: center;
+      margin-bottom: 0;
+      font-family: $font-primary;
 
-            @include bpmu.md {
-                text-align: start;
-                margin-left: 2rem;
-            }
-        }
+      @include bp.md {
+        text-align: start;
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .videoContainer {
+    grid-area: videoContainer;
+  }
+
+  .subtitleMap {
+    grid-area: subtitleMap;
+    @extend .subtitleVideo;
+  }
+
+  .mapContainer {
+    grid-area: mapContainer;
+  }
+
+  iframe {
+    border-radius: 0.5rem;
+    margin: 3rem;
+    box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+    grid-area: media;
+
+    @include bp.xs {
+      width: 20rem;
+      height: 15rem;
     }
 
-    .videoContainer {
-        grid-area: videoContainer;
+    @include bp.sm {
+      width: 35rem;
+      height: 20rem;
     }
 
-    .subtitleMap {
-        grid-area: subtitleMap;
-        @extend .subtitleVideo;
+    @include bp.md {
+      width: 45rem;
+      height: 25rem;
     }
 
-    .mapContainer {
-        grid-area: mapContainer;
+    @include bp.lg {
+      width: 65rem;
+      height: 45rem;
     }
-
-    iframe {
-        border-radius: 0.5rem;
-        margin: 3rem;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem varmu.$color-shadow;
-        grid-area: media;
-
-        @include bpmu.xs {
-            width: 20rem;
-            height: 15rem;
-        }
-
-        @include bpmu.sm {
-            width: 35rem;
-            height: 20rem;
-        }
-
-        @include bpmu.md {
-            width: 45rem;
-            height: 25rem;
-        }
-
-        @include bpmu.lg {
-            width: 65rem;
-            height: 45rem;
-        }
-    }
+  }
 }

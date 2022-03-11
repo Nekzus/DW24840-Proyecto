@@ -1,24 +1,27 @@
-@use '../utilities/variables'as varbo;
+
+@use "../utilities/variables" as *;
 
 // BODY
 body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-primary;
+    margin: 0;
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: varbo.$font-primary;
-        margin: 0;
-    }
+  p {
+    font-family: $font-secondary;
+    margin: 0;
+  }
 
-    p {
-        font-family: varbo.$font-secondary;
-        margin: 0;
-    }
-
-    background-image: linear-gradient(to top, varbo.$color-bg-primary, varbo.$color-bg-secondary);
-    color: varbo.$color-font-primary;
-
+  background-image: linear-gradient(
+    to top,
+    $color-bg-primary,
+    $color-bg-secondary
+  );
+  color: $color-font-primary;
 }

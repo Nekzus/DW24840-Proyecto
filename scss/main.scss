@@ -1,7 +1,9 @@
+@forward './base/fonts';
+@forward './base/reset';
 @forward './components/animations';
 @forward './components/buttons';
-@forward './components/carousel';
 @forward './components/cards';
+@forward './components/carousel';
 @forward './components/containers';
 @forward './components/navbar';
 @forward './components/multimedia';
@@ -11,6 +13,4 @@
 @forward './layout/forms';
 @forward './layout/header';
 @forward './layout/main';
-@forward './base/reset';
-@forward './base/fonts';
 @forward './vendors/cdn';

@@ -1,87 +1,90 @@
-@use '../utilities/variables'as varhd;
-@use '../utilities/breakpoints'as bphd;
+
+@use "../utilities/variables" as *;
+@use "../utilities/breakpoints" as bp;
 
 // HEADER
 header {
-    @include bphd.xs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(to left, varhd.$color-bg-primary, varhd.$color-bg-secondary);
-        padding: 0.625rem;
+  @include bp.xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      to left,
+      $color-bg-primary,
+      $color-bg-secondary
+    );
+    padding: 0.625rem;
 
-        .logoSite {
-            width: 15rem;
-            height: 15rem;
-        }
-
-        .logoSiteNav {
-            display: none;
-        }
-
-        .titleSite {
-            display: none;
-        }
+    .logoSite {
+      width: 15rem;
+      height: 15rem;
     }
 
-    @include bphd.sm {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "logo title title .";
-        justify-content: center;
-        align-content: center;
-
-        .logo {
-            grid-area: logo;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-
-        }
-
-        .title {
-            grid-area: title;
-            text-align: center;
-        }
-
-        .title span {
-            display: block;
-        }
-
-        .logoSite {
-            width: 10rem;
-            height: 10rem;
-        }
-
-        .logoSiteNav {
-            width: 5rem;
-            height: 5rem;
-        }
-
-        .titleSite {
-            display: inline;
-            font-size: 2.5rem;
-        }
-    }
-
-    @include bphd.md {
-        .titleSite {
-            font-size: 3.5rem;
-        }
-    }
-
-    a {
-        color: varhd.$color-font-primary;
-        text-decoration: none;
-
-        &:hover {
-            color: varhd.$color-font-primary;
-        }
+    .logoSiteNav {
+      display: none;
     }
 
     .titleSite {
-        font-family: varhd.$font-primary;
+      display: none;
+    }
+  }
+
+  @include bp.sm {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "logo title title .";
+    justify-content: center;
+    align-content: center;
+
+    .logo {
+      grid-area: logo;
+      display: flex;
+      justify-content: start;
+      align-items: center;
     }
 
+    .title {
+      grid-area: title;
+      text-align: center;
+    }
+
+    .title span {
+      display: block;
+    }
+
+    .logoSite {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .logoSiteNav {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .titleSite {
+      display: inline;
+      font-size: 2.5rem;
+    }
+  }
+
+  @include bp.md {
+    .titleSite {
+      font-size: 3.5rem;
+    }
+  }
+
+  a {
+    color: $color-font-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-font-primary;
+    }
+  }
+
+  .titleSite {
+    font-family: $font-primary;
+  }
 }
