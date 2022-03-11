@@ -357,6 +357,10 @@
   background-color: #01ff5f;
   color: #2A2E34;
 }
+.navbar form input:focus {
+  background-color: #2A2E35;
+  color: #F5F5F5;
+}
 .navbar .navbar-collapse {
   text-align: center;
 }
@@ -397,10 +401,22 @@
   grid-area: subtitleVideo;
   margin: 2rem;
   color: #2A2E34;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: #9166CC;
   box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
+}
+.multimedia .subtitleVideo .contentSubtitle, .multimedia .subtitleMap .contentSubtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: "Cubano", sans-serif;
+}
+@media (min-width: 768px) {
+  .multimedia .subtitleVideo .contentSubtitle, .multimedia .subtitleMap .contentSubtitle {
+    text-align: start;
+    margin-left: 2rem;
+  }
 }
 .multimedia .videoContainer {
   grid-area: videoContainer;
@@ -507,10 +523,6 @@ body p {
   font-family: "Sofia Pro", sans-serif;
   margin: 0;
 }
-body input:focus {
-  background-color: #2A2E35;
-  color: #F5F5F5;
-}
 
 footer {
   display: grid;
@@ -586,6 +598,10 @@ footer .footerSocials .sectionSocials .newsletter form {
 footer .footerSocials .sectionSocials .newsletter input {
   margin: 0.5rem;
   border-radius: 0.5rem;
+}
+footer .footerSocials .sectionSocials .newsletter input:focus {
+  background-color: #2A2E35;
+  color: #F5F5F5;
 }
 footer .footerSocials .sectionSocials .socials {
   grid-area: socials;
@@ -673,8 +689,14 @@ footer .footerCopyright {
   background-color: #9166CC;
   border-radius: 0.5rem;
 }
+.subtitleForm .contentSubtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: "Cubano", sans-serif;
+}
 @media (min-width: 768px) {
-  .subtitleForm {
+  .subtitleForm .contentSubtitle {
     text-align: start;
     margin-left: 2rem;
   }
@@ -713,6 +735,10 @@ footer .footerCopyright {
 .formGroup .form p a {
   color: #01ff5f;
   text-decoration: none;
+}
+.formGroup .form input:focus {
+  background-color: #2A2E35;
+  color: #F5F5F5;
 }
 .formGroup .form .camp label {
   display: block;

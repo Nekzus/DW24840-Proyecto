@@ -16,10 +16,21 @@
         grid-area: subtitleVideo;
         margin: 2rem;
         color: varmu.$color-font-secondary;
-        padding: 0.5rem;
+        padding: 1rem;
         background-color: varmu.$color-violet;
         box-shadow: 0.3125rem 0.3125rem 1.25rem varmu.$color-shadow;
         border-radius: 0.5rem;
+        .contentSubtitle {
+            display: block;
+            text-align: center;
+            margin-bottom: 0;
+            font-family: varmu.$font-primary;
+
+            @include bpmu.md {
+                text-align: start;
+                margin-left: 2rem;
+            }
+        }
     }
 
     .videoContainer {

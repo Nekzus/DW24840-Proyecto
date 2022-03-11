@@ -90,3 +90,8 @@
         color: $hv-color;
     }
 }
+
+@mixin input-focus {
+    background-color: varm.$color-bg-secondary;
+    color: varm.$color-font-primary;
+}

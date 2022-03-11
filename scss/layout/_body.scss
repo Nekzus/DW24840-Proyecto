@@ -21,8 +21,4 @@ body {
     background-image: linear-gradient(to top, varbo.$color-bg-primary, varbo.$color-bg-secondary);
     color: varbo.$color-font-primary;
 
-    input:focus {
-        background-color: varbo.$color-bg-secondary;
-        color: varbo.$color-font-primary;
-    }
 }

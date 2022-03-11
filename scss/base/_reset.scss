@@ -1,5 +1,6 @@
 // RESET DE VALORES
-@import '../utilities/breakpoints';
+
+@use '../utilities/breakpoints'as bpht;
 
 * {
     margin: 0;
@@ -8,15 +9,15 @@
 }
 
 html {
-    @include xs {
+    @include bpht.xs {
         font-size: 80%;
     }
 
-    @include sm {
+    @include bpht.sm {
         font-size: 100%;
     }
 
-    @include breakpoint($bp: 3840px) {
+    @include bpht.breakpoint($bp: 3840px) {
         font-size: 120%;
     }
 }

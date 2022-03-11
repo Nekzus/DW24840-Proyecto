@@ -85,6 +85,10 @@ footer {
                 input {
                     margin: 0.5rem;
                     border-radius: 0.5rem;
+
+                    &:focus {
+                        @include mixfo.input-focus;
+                    }
                 }
             }
 
