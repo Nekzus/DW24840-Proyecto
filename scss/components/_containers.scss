@@ -1,6 +1,3 @@
-@import'../utilities/mixins';
-
-
 .containerContent {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));

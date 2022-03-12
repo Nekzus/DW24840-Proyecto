@@ -307,7 +307,7 @@ footer {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, auto);
       gap: 1rem;
-      grid-template-areas: "newsletter" "socials" "contact";
+      grid-template-areas: "newsletter" "socials" "contact";
       justify-content: center;
       align-content: center;
       justify-items: center;
@@ -552,7 +552,7 @@ footer {
 .containerContentForm {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "subtitleForm" "form";
+  grid-template-areas: "subtitleForm" "form";
   gap: 2rem;
   padding: 2rem;
   color: #F5F5F5;
@@ -563,7 +563,7 @@ footer {
 .multimedia {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "subtitleVideo" "videoContainer" "subtitleMap" "mapContainer";
+  grid-template-areas: "subtitleVideo" "videoContainer" "subtitleMap" "mapContainer";
   place-content: center; }
   .multimedia .subtitleVideo, .multimedia .subtitleMap {
     grid-area: subtitleVideo;
@@ -622,7 +622,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 2rem);
-  grid-template-areas: "product product price price" "separator separator separator separator" "total total totalPrice totalPrice" "btnBuy btnBuy btnBuy btnBuy";
+  grid-template-areas: "product product price price" "separator separator separator separator" "total total totalPrice totalPrice" "btnBuy btnBuy btnBuy btnBuy";
   justify-content: center;
   align-content: flex-start;
   justify-items: center;
