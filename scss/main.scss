@@ -1,4 +1,8 @@
 
+@import './utilities/variables';
+@import './utilities/breakpoints';
+@import './utilities/mixins';
+@import './vendors/cdn';
 @import './base/fonts';
 @import './base/reset';
 @import './components/animations';
@@ -14,7 +18,3 @@
 @import './layout/forms';
 @import './layout/header';
 @import './layout/main';
-@import './utilities/breakpoints';
-@import './utilities/mixins';
-@import './utilities/variables';
-@import './vendors/cdn';
