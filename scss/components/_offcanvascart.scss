@@ -11,13 +11,13 @@
     font-family: $font-primary;
     color: $color-font-secondary;
 
-    h5 {
-        grid-area: title;
-    }
-
-    button {
+    &__btn-close {
         grid-area: close;
         justify-self: end;
+    }
+
+    &__title {
+        grid-area: title;
     }
 }
 
@@ -37,23 +37,23 @@
     gap: 0.5rem;
     background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
 
-    .product {
-        grid-area: product;
+    &__btn-buy {
+        grid-area: btnBuy;
     }
 
-    .price {
+    &__price {
         grid-area: price;
     }
 
-    .total {
+    &__product {
+        grid-area: product;
+    }
+
+    &__total {
         grid-area: total;
     }
 
-    .totalPrice {
+    &__total-price {
         grid-area: totalPrice;
-    }
-
-    .btnBuy {
-        grid-area: btnBuy;
     }
 }

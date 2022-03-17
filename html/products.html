@@ -28,21 +28,22 @@
     <meta name="description"
         content="Nekzus Game Store es una tienda de videojuegos en línea, donde podrás encontrar todo tipo de videojuegos, desde los más populares hasta los más nuevos.">
     <!-- META KEYWORDS -->
-    <meta name="keywords"
-        content="STORE, TIENDA, GAMER. VIDEOJUEGOS, JUEGOS, PC, PLAYSTATION, XBOX, NINTENDO">
+    <meta name="keywords" content="STORE, TIENDA, GAMER. VIDEOJUEGOS, JUEGOS, PC, PLAYSTATION, XBOX, NINTENDO">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <!-- Logo y titulo con link a la pagina de inicio -->
-        <div class="logo centerItemsGrid">
-            <a href="../index.html"><img class="logoSite" src="../images/logo-nekzus-game-store-shadow.png"
-                    alt="logo"></a>
+        <div class="logo">
+            <a href="../index.html" class="logo__link"><img class="logo__site"
+                    src="../images/logo-nekzus-game-store-shadow.png" alt="logo" /></a>
         </div>
-        <div class="title centerItemsGrid">
-            <a href="../index.html">
+        <div class="title">
+            <a href="../index.html" class="title__link">
                 <div class="animate__animated animate__rubberBand">
-                    <h1 class="titleSite">Nekzus<span class="subtitleSite">Game Store</span></h1>
+                    <h1 class="title__site">
+                        Nekzus<span class="title__subtitle-site">Game Store</span>
+                    </h1>
                 </div>
             </a>
         </div>
@@ -282,68 +283,72 @@
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="menuCart"
             aria-labelledby="menuCartLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="menuCartLabel">Carrito de compras</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                <h5 class="offcanvas-header__title" id="menuCartLabel">Carrito de compras</h5>
+                <button type="button" class="offcanvas-header__btn-close btn-close text-reset"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <h5 class="product">Producto</h5>
-                <h5 class="price">Subtotal</h5>
-                <h6 class="total">Total:</h6>
-                <h6 class="totalPrice">$ total:</h6>
-                <button type="button" class="btnBuy btn btn-outline-info">Comprar</button>
+                <h5 class="offcanvas-body__product">Producto</h5>
+                <h5 class="offcanvas-body__price">Subtotal</h5>
+                <h6 class="offcanvas-body__total">Total:</h6>
+                <h6 class="offcanvas-body__total-price">$ total:</h6>
+                <button type="button" class="offcanvas-body__btn-buy btn btn-outline-info">
+                    Comprar
+                </button>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footerSocials">
+    <footer class="footer">
+        <div class="pre-footer">
             <!-- Sobre nosotros -->
-            <section class="sectionAbout" data-aos="zoom-in">
-                <h3>Sobre Nekzus Game Store</h3>
-                <p>
+            <section class="section-about" data-aos="zoom-in">
+                <h3 class="section-about__title-about">Sobre Nekzus Game Store</h3>
+                <p class="section-about__desc-about">
                     Nekzus Game Store es una tienda de videojuegos en línea, donde
                     podrás encontrar todo tipo de videojuegos, desde los más populares
                     hasta los más nuevos.
                 </p>
             </section>
             <!-- Redes sociales, newsletter y contacto -->
-            <section class="sectionSocials">
+            <section class="section-follow">
                 <div class="newsletter" data-aos="zoom-in">
-                    <h3>Suscribete</h3>
-                    <form action="#">
-                        <input type="email" name="email" id="email" placeholder="Ingresa tu email" />
-                        <button class="btnSubmitNews btn btn-outline-info">Enviar</button>
+                    <h3 class="newsletter__title">Suscribete</h3>
+                    <form class="form" action="#">
+                        <input class="form__email" type="email" name="email" id="email"
+                            placeholder="Ingresa tu email" />
+                        <button class="form__button form__button--btn-news btn btn-outline-info">Enviar</button>
                     </form>
                 </div>
                 <div class="socials" data-aos="zoom-in">
-                    <h3>Síguenos en:</h3>
-                    <a href="https://www.youtube.com/" title="YouTube" target="_blank"><i id="youtube"
-                            class="bi bi-youtube"></i></a>
-                    <a href="https://es-la.facebook.com/" title="Facebook" target="_blank"><i id="facebook"
-                            class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i id="instagram"
-                            class="bi bi-instagram"></i></a>
+                    <h3 class="socials__title">Síguenos en:</h3>
+                    <a class="socials__link socials__link--youtube" href="https://www.youtube.com/" title="YouTube"
+                        target="_blank"><i id="youtube" class="bi bi-youtube"></i></a>
+                    <a class="socials__link socials__link--facebook" href="https://es-la.facebook.com/" title="Facebook"
+                        target="_blank"><i id="facebook" class="bi bi-facebook"></i></a>
+                    <a class="socials__link socials__link--instagram" href="https://www.instagram.com/"
+                        title="Instagram" target="_blank"><i id="instagram" class="bi bi-instagram"></i></a>
                 </div>
                 <div class="contact" data-aos="zoom-in">
-                    <h3>Contacto</h3>
-                    <p>Nekzus Game Store</p>
-                    <p>Avenida Siempreviva, 742</p>
-                    <p>Ciudad de Springfield, Estados Unidos</p>
-                    <p class="telephone"><i class="bi bi-telephone-fill"> </i>5555-555555</p>
+                    <h3 class="contact__title">Contacto</h3>
+                    <p class="contact__text">Nekzus Game Store</p>
+                    <p class="contact__text">Avenida Siempreviva, 742</p>
+                    <p class="contact__text">Ciudad de Springfield, Estados Unidos</p>
+                    <p class="contact__text contact__text--telephone">
+                        <i class="bi bi-telephone-fill"> </i>5555-555555
+                    </p>
                 </div>
             </section>
         </div>
         <!-- Pie de pagina con copyright -->
-        <div class="footerCopyright">
-            <p class="copyright">&copy; 2022 Copyright - Nekzus Game Store</p>
+        <div class="copyright">
+            <p class="copyright__text">&copy; 2022 Copyright - Nekzus Game Store</p>
         </div>
     </footer>
     <!-- LINKS DE CSS -->
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+        </script>
     <!-- Script AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

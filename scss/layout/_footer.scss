@@ -1,153 +1,187 @@
 // FOOTER
-
-footer {
+.footer {
     display: grid;
     grid-template-columns: 1fr;
     place-content: center;
     align-items: center;
+}
 
-    .footerSocials {
-        display: grid;
-        grid-template-columns: 1fr;
-        place-content: center;
-        place-items: center;
-        row-gap: 2rem;
-        text-align: center;
-        background-image: linear-gradient(to top, var$color-bg-primary, $color-bg-secondary);
-        padding: 2rem;
-        color: $color-font-primary;
-        font-family: $font-secondary;
+.pre-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    row-gap: 2rem;
+    text-align: center;
+    background-image: linear-gradient(to top, var$color-bg-primary, $color-bg-secondary);
+    padding: 2rem;
+    color: $color-font-primary;
+    font-family: $font-secondary;
+}
 
-        .sectionAbout {
-            background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
-            padding: 1.5rem;
-            border-radius: 1rem;
-            box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+.section-about {
+    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
 
-            h3 {
-                color: $color-font-secondary;
-                background-color: $color-pink;
-                border-radius: 0.5rem;
-                padding: 0.5rem;
-                box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
-            }
+    &__desc-about {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
 
-            p {
-                font-size: 1.2rem;
-                margin-top: 1rem;
-            }
+    &__title-about {
+        color: $color-font-secondary;
+        background-color: $color-pink;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+    }
+}
+
+.section-follow {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    grid-template-areas:
+        "newsletter"
+        "socials"
+        "contact";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    @include md {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "newsletter contact socials";
+    }
+}
+
+.newsletter {
+    grid-area: newsletter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    padding: 0.8rem;
+    background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+    border-radius: 2rem;
+    border-width: 0.1rem;
+    border-color: $color-violet;
+    box-shadow: 0rem 0.0625rem 0.625rem $color-violet;
+
+    &__title {
+        grid-area: titulo;
+        display: inline-block;
+        padding: 0.5rem;
+    }
+}
+
+.socials {
+    grid-area: socials;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 2rem);
+    grid-template-areas:
+        "titulo titulo titulo";
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-style: solid;
+    padding: 1.5rem;
+    background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+    border-radius: 2rem;
+    border-width: 0.1rem;
+    border-color: $color-blue;
+    box-shadow: 0rem 0.0625rem 0.625rem $color-blue;
+
+    &__link {
+
+        &--facebook {
+            @include social-icon($hv-color: $color-facebook)
         }
 
-        .sectionSocials {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, auto);
-            gap: 1rem;
-            grid-template-areas:
-                "newsletter"
-                "socials"
-                "contact";
-            justify-content: center;
-            align-content: center;
-            justify-items: center;
-            align-items: center;
+        &--instagram {
+            @include social-icon($hv-color: $color-instagram)
+        }
 
-            div h3 {
-                grid-area: titulo;
-                display: inline-block;
-                padding: 0.5rem;
-            }
-
-            .newsletter {
-                grid-area: newsletter;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-style: solid;
-                padding: 0.8rem;
-                background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
-                border-radius: 2rem;
-                border-width: 0.1rem;
-                border-color: $color-violet;
-                box-shadow: 0rem 0.0625rem 0.625rem $color-violet;
-
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                input {
-                    margin: 0.5rem;
-                    border-radius: 0.5rem;
-                }
-            }
-
-            .socials {
-                grid-area: socials;
-                display: grid;
-                grid-template-columns: repeat(3, auto);
-                grid-template-rows: repeat(2, 2rem);
-                grid-template-areas:
-                    "titulo titulo titulo";
-                justify-content: center;
-                align-items: center;
-                gap: 1rem;
-                border-style: solid;
-                padding: 1.5rem;
-                background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
-                border-radius: 2rem;
-                border-width: 0.1rem;
-                border-color: $color-blue;
-                box-shadow: 0rem 0.0625rem 0.625rem $color-blue;
-
-                #instagram {
-                    @include social-icon($hv-color: $color-instagram)
-                }
-
-                #youtube {
-                    @include social-icon($hv-color: $color-youtube)
-                }
-
-                #facebook {
-                    @include social-icon($hv-color: $color-facebook)
-                }
-
-            }
-
-            .contact {
-                grid-area: contact;
-                border-style: solid;
-                padding: 1rem;
-                background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
-                border-radius: 2rem;
-                border-width: 0.1rem;
-                border-color: $color-green;
-                box-shadow: 0rem 0.0625rem 0.625rem $color-green;
-
-                .telephone {
-                    font-size: 1rem;
-                }
-            }
-
-            @include md {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: auto;
-                grid-template-areas:
-                    "newsletter contact socials";
-            }
+        &--youtube {
+            @include social-icon($hv-color: $color-youtube)
         }
     }
 
-    .footerCopyright {
-        background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
-        padding: 1.5rem;
+    &__title {
+        grid-area: titulo;
+        display: inline-block;
+        padding: 0.5rem;
+    }
+
+}
+
+.contact {
+    grid-area: contact;
+    border-style: solid;
+    padding: 1rem;
+    background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+    border-radius: 2rem;
+    border-width: 0.1rem;
+    border-color: $color-green;
+    box-shadow: 0rem 0.0625rem 0.625rem $color-green;
+
+    &__text {
+        &--telephone {
+            font-size: 1rem;
+        }
+    }
+
+    &__title {
+        grid-area: titulo;
+        display: inline-block;
+        padding: 0.5rem;
+    }
+}
+
+.copyright {
+    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+    padding: 1.5rem;
+
+    &__text {
         text-align: center;
         color: $color-font-primary;
         font-family: $font-secondary;
         font-size: 1rem;
     }
+}
 
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+        text-transform: uppercase;
+        font-family: $font-secondary;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        &--btn-news {
+            font-size: 0.8rem;
+            padding: 0.5em;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+    }
+
+    &__email {
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+    }
 }

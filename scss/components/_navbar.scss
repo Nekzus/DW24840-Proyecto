@@ -1,5 +1,4 @@
 // NAVBAR
-
 .navbar {
     background-color: $color-shadow-hover;
     font-family: $font-primary;
@@ -17,12 +16,18 @@
     }
 
     .navbar-nav {
+        .nav-item {
+            margin: 0 0.5rem;
+            .active {
+                background-color: $color-blue;
+                color: $color-font-secondary;   
+            }
+        }
         .nav-link {
             color: $color-font-primary;
             text-decoration: none;
             border-radius: 0.5rem;
             transition: 0.7s;
-
             &:hover {
                 padding: 0.5rem;
                 background-color: $color-green;
@@ -65,3 +70,4 @@
         font-size: 0.9rem;
     }
 }
+
