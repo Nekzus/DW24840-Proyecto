@@ -604,13 +604,15 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+.form__control {
+  font-weight: bold; }
+
 .form__text-area {
   width: 100%;
   padding: 0.4rem;
   border-radius: 0.5rem;
   font-family: "Sofia Pro", sans-serif;
-  font-size: 1rem;
-  font-weight: bold; }
+  font-size: 1rem; }
   .form__text-area:focus {
     background-color: #2A2E35;
     color: #F5F5F5; }
