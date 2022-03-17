@@ -74,18 +74,3 @@
 
     @include subtitle();
 }
-
-
-.containerContentForm {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas:
-        "subtitleForm"
-        "form";
-    gap: 2rem;
-    padding: 2rem;
-    color: $color-font-primary;
-    font-family: $font-secondary;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-}

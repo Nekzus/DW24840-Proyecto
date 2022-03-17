@@ -298,17 +298,6 @@
       .containerContentHome .subtitle {
         justify-self: normal; } }
 
-.containerContentForm {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "subtitleForm" "form";
-  gap: 2rem;
-  padding: 2rem;
-  color: #F5F5F5;
-  font-family: "Sofia Pro", sans-serif;
-  font-size: 1.2rem;
-  border-radius: 0.5rem; }
-
 .navbar {
   background-color: rgba(42, 46, 52, 0.9);
   font-family: "Cubano", sans-serif;
@@ -611,23 +600,67 @@ body {
     margin: 0.5rem;
     border-radius: 0.5rem; }
 
-.centerItemsGrid {
-  justify-self: center;
-  align-self: center; }
+.form__button-submit {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
-.subtitleForm {
-  grid-area: subtitleForm;
-  color: #2A2E34;
-  padding: 1rem;
-  box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
-  background-color: #9166CC;
+.form__text-area {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  font-family: "Sofia Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: bold; }
+  .form__text-area:focus {
+    background-color: #2A2E35;
+    color: #F5F5F5; }
+
+.form__container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "subtitleForm" "form";
+  gap: 2rem;
+  padding: 2rem;
+  color: #F5F5F5;
+  font-family: "Sofia Pro", sans-serif;
+  font-size: 1.2rem;
   border-radius: 0.5rem; }
+  .form__container .subtitle {
+    grid-column: 1/-1;
+    grid-template-rows: 3.125rem;
+    color: #2A2E34;
+    padding: 1rem;
+    background-color: #9166CC;
+    box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem; }
+    .form__container .subtitle .contentSubtitle {
+      display: block;
+      text-align: center;
+      margin-bottom: 0;
+      font-family: "Cubano", sans-serif; }
+      @media (min-width: 768px) {
+        .form__container .subtitle .contentSubtitle {
+          text-align: start;
+          margin-left: 2rem; } }
+    @media (min-width: 0) {
+      .form__container .subtitle {
+        justify-self: center;
+        align-self: center; } }
+    @media (min-width: 576px) {
+      .form__container .subtitle {
+        justify-self: normal; } }
+
+.form__content-subtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: "Cubano", sans-serif; }
   @media (min-width: 768px) {
-    .subtitleForm {
+    .form__content-subtitle {
       text-align: start;
       margin-left: 2rem; } }
 
-.formGroup {
+.form__form-group {
   grid-area: form;
   display: flex;
   flex-direction: column;
@@ -637,37 +670,41 @@ body {
   width: MIN(40rem, 100%);
   height: 100%;
   padding: 1rem; }
-  .formGroup h3 {
-    font-size: 1.5rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    color: #2A2E34;
-    background-color: #01ff5f;
-    box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5); }
-  .formGroup .form {
-    margin-top: 1rem; }
-    .formGroup .form button {
-      margin-top: 1rem;
-      margin-bottom: 1rem; }
-    .formGroup .form p {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem; }
-      .formGroup .form p a {
-        color: #01ff5f;
-        text-decoration: none; }
-    .formGroup .form .camp label {
-      display: block;
-      font-size: 1.2rem; }
-    .formGroup .form textarea {
-      width: 100%;
-      padding: 0.4rem;
-      border-radius: 0.5rem;
-      font-family: "Sofia Pro", sans-serif;
-      font-size: 1rem;
-      font-weight: bold; }
-      .formGroup .form textarea:focus {
-        background-color: #2A2E35;
-        color: #F5F5F5; }
+  .form__form-group--center-items-grid {
+    justify-self: center;
+    align-self: center; }
+
+.form__label {
+  display: block;
+  font-size: 1.2rem; }
+
+.form__link {
+  color: #01ff5f;
+  text-decoration: none; }
+
+.form__subtitle {
+  grid-area: subtitleForm;
+  color: #2A2E34;
+  padding: 1rem;
+  box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
+  background-color: #9166CC;
+  border-radius: 0.5rem; }
+  @media (min-width: 768px) {
+    .form__subtitle {
+      text-align: start;
+      margin-left: 2rem; } }
+
+.form__text {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.form__title {
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: #2A2E34;
+  background-color: #01ff5f;
+  box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5); }
 
 .header .title__site, .header .title__link {
   color: #F5F5F5;
@@ -718,7 +755,7 @@ body {
   .header .title__site {
     font-size: 3.5rem; } }
 
-main {
+.main {
   text-align: center;
   font-family: "Sofia Pro", sans-serif;
   color: #F5F5F5;
