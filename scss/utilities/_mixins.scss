@@ -1,6 +1,6 @@
 // MIXINS
 @mixin subtitle($bg-color: $color-violet, $ft-color: $color-font-secondary) {
-    .subtitle {
+    &__subtitle {
         grid-column: 1/-1;
         grid-template-rows: 3.125rem;
         color: $ft-color;
@@ -9,26 +9,28 @@
         box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
         border-radius: 0.5rem;
 
-        .contentSubtitle {
-            display: block;
-            text-align: center;
-            margin-bottom: 0;
-            font-family: $font-primary;
-
-            @include md {
-                text-align: start;
-                margin-left: 2rem;
-            }
-        }
-
         @include xs {
             justify-self: center;
             align-self: center;
         }
+
         @include sm {
             justify-self: normal;
         }
     }
+
+    &__content-subtitle {
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+        font-family: $font-primary;
+
+        @include md {
+            text-align: start;
+            margin-left: 2rem;
+        }
+    }
+
 }
 
 @mixin card() {
@@ -47,6 +49,7 @@
     box-shadow: 0rem 0.0625rem 0.625rem $color-shadow;
     transition: all 0.7s ease;
     width: 18.75rem;
+    flex: 0 0 auto;
 
     .card-img-top {
         width: 100%;

@@ -19,8 +19,8 @@ body {
     background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
     color: $color-font-primary;
 
-    input:focus {
-        background-color: $color-bg-secondary !important;
-        color: $color-font-primary !important;
+    .form-control:focus {
+        background-color: $color-bg-secondary;
+        color: $color-font-primary;
     }
 }

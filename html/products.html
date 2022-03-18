@@ -95,21 +95,21 @@
     </nav>
     <main class="main">
         <!-- Listado de productos -->
-        <section class="containerContent">
-            <div class="subtitle">
-                <h3 class="contentSubtitle">Productos</h3>
+        <section class="products__container">
+            <div class="products__subtitle">
+                <h3 class="products__content-subtitle">Productos</h3>
             </div>
             <!-- Filtrado y ordenamiento de productos -->
-            <section class="filters">
-                <h4 class="filtersTitle">Aplicar filtros</h4>
-                <select>
+            <section class="products__filters">
+                <h4 class="products__filters-title">Aplicar filtros</h4>
+                <select class="products__category">
                     <option>Filtrar por Categoria:</option>
                     <option>Accion</option>
                     <option>Aventura</option>
                     <option>Shooter</option>
                     <option>Terror</option>
                 </select>
-                <select>
+                <select class="products__order">
                     <option>Ordenar por:</option>
                     <option>Titulo: Alfabetico A-Z</option>
                     <option>Titulo: Alfabetico Z-A</option>
@@ -118,7 +118,7 @@
                 </select>
             </section>
             <!-- Productos -->
-            <div class="productCard card product1">
+            <div class="product-card card product1">
                 <img src="../images/pda_Tomb-Raider-(2013).webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Tomb Raider (2013)</h5>
@@ -126,7 +126,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product2">
+            <div class="product-card card product2">
                 <img src="../images/pda_The-Witcher-3-Wild-Hunt.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">The Witcher 3-Wild Hunt</h5>
@@ -134,7 +134,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product3">
+            <div class="product-card card product3">
                 <img src="../images/pda_Red-Dead-Redemption-2.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Red Dead Redemption 2</h5>
@@ -142,7 +142,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product4">
+            <div class="product-card card product4">
                 <img src="../images/pda_Portal.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Portal</h5>
@@ -150,7 +150,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product5">
+            <div class="product-card card product5">
                 <img src="../images/pda_Portal-2.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Portal 2</h5>
@@ -158,7 +158,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product6">
+            <div class="product-card card product6">
                 <img src="../images/pda_PAYDAY-2.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">PAYDAY 2</h5>
@@ -166,7 +166,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product7">
+            <div class="product-card card product7">
                 <img src="../images/pda_Limbo.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Limbo</h5>
@@ -174,7 +174,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product8">
+            <div class="product-card card product8">
                 <img src="../images/pda_Life-is-Strange.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Life is Strange</h5>
@@ -182,7 +182,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product9">
+            <div class="product-card card product9">
                 <img src="../images/pda_Left-4-Dead-2.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Left 4 Dead 2</h5>
@@ -190,7 +190,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product10">
+            <div class="product-card card product10">
                 <img src="../images/pda_Hitman-3.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Hitman 3</h5>
@@ -198,7 +198,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product11">
+            <div class="product-card card product11">
                 <img src="../images/pda_Grand-Theft-Auto-V.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Grand Theft Auto V</h5>
@@ -206,7 +206,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product12">
+            <div class="product-card card product12">
                 <img src="../images/pda_Forza-Horizon-5.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Forza Horizon 5</h5>
@@ -214,7 +214,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product13">
+            <div class="product-card card product13">
                 <img src="../images/pda_Fallout-4.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Fallout 4</h5>
@@ -222,7 +222,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product14">
+            <div class="product-card card product14">
                 <img src="../images/pda_DOOM-(2016).webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">DOOM (2016)</h5>
@@ -230,7 +230,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product15">
+            <div class="product-card card product15">
                 <img src="../images/pda_Destiny-2.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Destiny 2</h5>
@@ -238,7 +238,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product16">
+            <div class="product-card card product16">
                 <img src="../images/pda_Counter-Strike-Global.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Counter Strike Global</h5>
@@ -246,7 +246,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product17">
+            <div class="product-card card product17">
                 <img src="../images/pda_COD-Modern-Warfare.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">COD Modern Warfare</h5>
@@ -254,7 +254,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product18">
+            <div class="product-card card product18">
                 <img src="../images/pda_Borderlands-2.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">Borderlands 2</h5>
@@ -262,7 +262,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product19">
+            <div class="product-card card product19">
                 <img src="../images/pda_BioShock.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">BioShock</h5>
@@ -270,7 +270,7 @@
                     <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="productCard card product20">
+            <div class="product-card card product20">
                 <img src="../images/pda_BioShock-Infinite.webp" class="card-img-top" alt="producto" />
                 <div class="card-body">
                     <h5 class="card-title">BioShock Infinite</h5>
@@ -314,7 +314,7 @@
                 <div class="newsletter" data-aos="zoom-in">
                     <h3 class="newsletter__title">Suscribete</h3>
                     <form class="form" action="#">
-                        <input class="form__email" type="email" name="email" id="email"
+                        <input class="form__email form-control" type="email" name="email" id="email"
                             placeholder="Ingresa tu email" />
                         <button class="form__button form__button--btn-news btn btn-outline-info">Enviar</button>
                     </form>

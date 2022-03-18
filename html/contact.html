@@ -145,12 +145,12 @@
             </label>
         </section>
         <!-- Multimedia: video y mapa -->
-        <section class="multimedia">
-            <div class="subtitleVideo">
-                <h3 class="contentSubtitle">Video</h3>
+        <section class="multimedia__container">
+            <div class="multimedia__subtitle">
+                <h3 class="multimedia__content-subtitle">Video</h3>
             </div>
-            <div class="videoContainer embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oDKKu7hxT78"
+            <div class="multimedia__video embed-responsive embed-responsive-16by9">
+                <iframe class="multimedia__iframe embed-responsive-item" src="https://www.youtube.com/embed/oDKKu7hxT78"
                     allowfullscreen></iframe>
                 <!-- Animacion faces -->
                 <div class="animation">
@@ -172,11 +172,11 @@
                     </label>
                 </div>
             </div>
-            <div class="subtitleMap">
-                <h3 class="contentSubtitle">Ubicación</h3>
+            <div class="multimedia__subtitle">
+                <h3 class="multimedia__content-subtitle">Ubicación</h3>
             </div>
-            <div class="mapContainer embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
+            <div class="multimedia__map embed-responsive embed-responsive-16by9">
+                <iframe class="multimedia__iframe embed-responsive-item"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.44366934056!2d-58.503337965168704!3d-34.61566245894793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1643766720197!5m2!1ses-419!2sar"
                     allowfullscreen></iframe>
             </div>
@@ -216,7 +216,7 @@
                 <div class="newsletter" data-aos="zoom-in">
                     <h3 class="newsletter__title">Suscribete</h3>
                     <form class="form" action="#">
-                        <input class="form__email" type="email" name="email" id="email"
+                        <input class="form__email form-control" type="email" name="email" id="email"
                             placeholder="Ingresa tu email" />
                         <button class="form__button form__button--btn-news btn btn-outline-info">Enviar</button>
                     </form>

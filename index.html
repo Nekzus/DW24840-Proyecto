@@ -31,7 +31,7 @@
     <meta name="keywords" content="STORE, TIENDA, GAMER. VIDEOJUEGOS, JUEGOS, PC, PLAYSTATION, XBOX, NINTENDO" />
 </head>
 
-<body class="body">
+<body>
     <header class="header">
         <!-- Logo y titulo con link a la pagina de inicio -->
         <div class="logo">
@@ -96,7 +96,7 @@
         </div>
     </nav>
     <!-- Imagen principal: carousel de imagenes -->
-    <div class="container-flex">
+    <div class="carousel container-flex">
         <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
@@ -110,48 +110,48 @@
                 <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4"
                     aria-label="Slide 5"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+            <div class="carousel__inner carousel-inner">
+                <div class="carousel__item carousel-item active">
                     <img src="./images/slider_Forza-Horizon-5.webp" class="d-block w-100" alt="slide1" />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>FORZA HORIZON 5</h5>
-                        <p>
+                    <div class="carousel__caption carousel-caption d-none d-md-block">
+                        <h5 class="carousel__title">FORZA HORIZON 5</h5>
+                        <p class="carousel__text">
                             Some representative placeholder content for the first slide.
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel__item carousel-item">
                     <img src="./images/slider_Borderlands-2.webp" class="d-block w-100" alt="slide2" />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>BORDERLANDS 2</h5>
-                        <p>
+                    <div class="carousel__caption carousel-caption d-none d-md-block">
+                        <h5 class="carousel__title">BORDERLANDS 2</h5>
+                        <p class="carousel__text">
                             Some representative placeholder content for the second slide.
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel__item carousel-item">
                     <img src="./images/slider_Red-Dead-Redemption-2.webp" class="d-block w-100" alt="slide3" />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>RED DEAD REDEMPTION 2</h5>
-                        <p>
+                    <div class="carousel__caption carousel-caption d-none d-md-block">
+                        <h5 class="carousel__title">RED DEAD REDEMPTION 2</h5>
+                        <p class="carousel__text">
                             Some representative placeholder content for the third slide.
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel__item carousel-item">
                     <img src="./images/slider_The-Witcher-3-Wild-Hunt.webp" class="d-block w-100" alt="slide4" />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>THE WITCHER 3</h5>
-                        <p>
+                    <div class="carousel__caption carousel-caption d-none d-md-block">
+                        <h5 class="carousel__title">THE WITCHER 3</h5>
+                        <p class="carousel__text">
                             Some representative placeholder content for the third slide.
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel__item carousel-item">
                     <img src="./images/slider_COD-Modern-Warfare.webp" class="d-block w-100" alt="slide5" />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>COD MODERN WARFARE</h5>
-                        <p>
+                    <div class="carousel__caption carousel-caption d-none d-md-block">
+                        <h5 class="carousel__title">COD MODERN WARFARE</h5>
+                        <p class="carousel__text">
                             Some representative placeholder content for the third slide.
                         </p>
                     </div>
@@ -169,12 +169,12 @@
     </div>
     <main class="main">
         <!-- Listado de productos destacados: listado horizontal -->
-        <section class="containerContentHome">
-            <div class="subtitle">
-                <h3 class="contentSubtitle">Productos destacados</h3>
+        <section class="home__container">
+            <div class="home__subtitle">
+                <h3 class="home__content-subtitle">Productos destacados</h3>
             </div>
-            <div class="productsHome">
-                <div class="productCardHome card product1">
+            <div class="home__products">
+                <div class="product-card card product1">
                     <img src="./images/pda_COD-Modern-Warfare.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
                         <h5 class="card-title">COD Modern Warfare</h5>
@@ -182,7 +182,7 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product2">
+                <div class="product-card card product2">
                     <img src="./images/pda_BioShock-Infinite.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
                         <h5 class="card-title">BioShock Infinite</h5>
@@ -190,7 +190,7 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product3">
+                <div class="product-card card product3">
                     <img src="./images/pda_Borderlands-2.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
                         <h5 class="card-title">Borderlands 2</h5>
@@ -198,7 +198,7 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product4">
+                <div class="product-card card product4">
                     <img src="./images/pda_Destiny-2.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
                         <h5 class="card-title">Destiny 2</h5>
@@ -206,7 +206,7 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product5">
+                <div class="product-card card product5">
                     <img src="./images/pda_Grand-Theft-Auto-V.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
                         <h5 class="card-title">Grand Theft Auto V</h5>
@@ -214,7 +214,7 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product6">
+                <div class="product-card card product6">
                     <img src="./images/pda_Hitman-3.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
                         <h5 class="card-title">Hitman 3</h5>
@@ -222,7 +222,7 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product7">
+                <div class="product-card card product7">
                     <img src="./images/pda_Fallout-4.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
                         <h5 class="card-title">Fallout 4</h5>
@@ -230,7 +230,7 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product8">
+                <div class="product-card card product8">
                     <img src="./images/pda_The-Witcher-3-Wild-Hunt.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
                         <h5 class="card-title">The Witcher 3 Wild Hunt</h5>
@@ -260,14 +260,14 @@
             </label>
         </section>
         <!-- Listado de productos en oferta: listado horizontal -->
-        <section class="containerContentHome">
-            <div class="subtitle">
-                <h3 class="contentSubtitle">Ofertas disponibles</h3>
+        <section class="home__container">
+            <div class="home__subtitle">
+                <h3 class="home__content-subtitle">Ofertas disponibles</h3>
             </div>
-            <div class="productsHome">
-                <div class="productCardHome card product1 position-relative">
+            <div class="home__products">
+                <div class="product-card card product1 position-relative">
                     <span
-                        class="position-absolute top-1 right-1 start-90 translate-middle badgeOff badge rounded-pill">25%
+                        class="product-card--badge-off position-absolute top-1 right-1 start-90 translate-middle badge rounded-pill">25%
                         <span class="visually-hidden"></span></span>
                     <img src="./images/pda_BioShock.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
@@ -276,9 +276,9 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product2 position-relative">
+                <div class="product-card card product2 position-relative">
                     <span
-                        class="position-absolute top-1 right-1 start-90 translate-middle badgeOff badge rounded-pill">15%
+                        class="product-card--badge-off position-absolute top-1 right-1 start-90 translate-middle badge rounded-pill">15%
                         <span class="visually-hidden"></span></span>
                     <img src="./images/pda_DOOM-(2016).webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
@@ -287,9 +287,9 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product3 position-relative">
+                <div class="product-card card product3 position-relative">
                     <span
-                        class="position-absolute top-1 right-1 start-90 translate-middle badgeOff badge rounded-pill">40%
+                        class="product-card--badge-off position-absolute top-1 right-1 start-90 translate-middle badge rounded-pill">40%
                         <span class="visually-hidden"></span></span>
                     <img src="./images/pda_The-Witcher-3-Wild-Hunt.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
@@ -298,9 +298,9 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product4 position-relative">
+                <div class="product-card card product4 position-relative">
                     <span
-                        class="position-absolute top-1 right-1 start-90 translate-middle badgeOff badge rounded-pill">10%
+                        class="product-card--badge-off position-absolute top-1 right-1 start-90 translate-middle badge rounded-pill">10%
                         <span class="visually-hidden"></span></span>
                     <img src="./images/pda_Half-Life-2.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
@@ -309,9 +309,9 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product5 position-relative">
+                <div class="product-card card product5 position-relative">
                     <span
-                        class="position-absolute top-1 right-1 start-90 translate-middle badgeOff badge rounded-pill">5%
+                        class="product-card--badge-off position-absolute top-1 right-1 start-90 translate-middle badge rounded-pill">5%
                         <span class="visually-hidden"></span></span>
                     <img src="./images/pda_Hitman-3.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
@@ -320,9 +320,9 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product6 position-relative">
+                <div class="product-card card product6 position-relative">
                     <span
-                        class="position-absolute top-1 right-1 start-90 translate-middle badgeOff badge rounded-pill">25%
+                        class="product-card--badge-off position-absolute top-1 right-1 start-90 translate-middle badge rounded-pill">25%
                         <span class="visually-hidden"></span></span>
                     <img src="./images/pda_PAYDAY-2.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
@@ -331,9 +331,9 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product7 position-relative">
+                <div class="product-card card product7 position-relative">
                     <span
-                        class="position-absolute top-1 right-1 start-90 translate-middle badgeOff badge rounded-pill">50%
+                        class="product-card--badge-off position-absolute top-1 right-1 start-90 translate-middle badge rounded-pill">50%
                         <span class="visually-hidden"></span></span>
                     <img src="./images/pda_Counter-Strike-Global.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
@@ -342,9 +342,9 @@
                         <a href="#" class="btn btn-outline-info">Agregar al carrito</a>
                     </div>
                 </div>
-                <div class="productCardHome card product8 position-relative">
+                <div class="product-card card product8 position-relative">
                     <span
-                        class="position-absolute top-1 right-1 start-90 translate-middle badgeOff badge rounded-pill">25%
+                        class="product-card--badge-off position-absolute top-1 right-1 start-90 translate-middle badge rounded-pill">25%
                         <span class="visually-hidden"></span></span>
                     <img src="./images/pda_Grand-Theft-Auto-V.webp" class="card-img-top" alt="producto" />
                     <div class="card-body">
@@ -390,7 +390,7 @@
                 <div class="newsletter" data-aos="zoom-in">
                     <h3 class="newsletter__title">Suscribete</h3>
                     <form class="form" action="#">
-                        <input class="form__email" type="email" name="email" id="email"
+                        <input class="form__email form-control" type="email" name="email" id="email"
                             placeholder="Ingresa tu email" />
                         <button class="form__button form__button--btn-news btn btn-outline-info">Enviar</button>
                     </form>
