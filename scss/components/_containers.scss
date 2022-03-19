@@ -55,7 +55,7 @@
     @include block-container(&__products);
 }
 
-.product-card {
+.card {
 
     @include card;
 

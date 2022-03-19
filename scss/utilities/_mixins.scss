@@ -45,32 +45,6 @@
     width: 18.75rem;
     flex: 0 0 auto;
 
-    .card-img-top {
-        width: 100%;
-        height: 15.625rem;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
-    }
-
-    .card-body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3rem 1.875rem 2.6875rem;
-        gap: 0.5rem;
-        justify-content: center;
-        align-content: center;
-        place-items: center;
-    }
-
-    .card-title {
-        margin-bottom: 0;
-    }
-
-    &:hover {
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
-        transform: translateY(-3%);
-    }
-
 }
 
 @mixin social-icon ($hv-color:'', $ft-color: $color-font-primary) {
@@ -84,8 +58,8 @@
     }
 }
 
-@mixin block-container ($content:'') {
-    @include subtitle;
+@mixin block-container ($content:'', $bg-color: $color-violet, $ft-color: $color-font-secondary) {
+    @include subtitle($bg-color, $ft-color);
 
     &__container {
         display: grid;

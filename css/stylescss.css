@@ -34,23 +34,10 @@
   html {
     font-size: 150%; } }
 
-.btn {
-  text-transform: uppercase;
+.main {
+  text-align: center;
   font-family: "Sofia Pro", sans-serif;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem; }
-
-.btn-outline-success {
-  color: #51C5F7;
-  border-color: #51C5F7;
-  box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
-  transition: 0.7s; }
-  .btn-outline-success:hover {
-    color: #2A2E34;
-    border-color: #51C5F7;
-    background-color: #51C5F7; }
+  color: #F5F5F5; }
 
 .carousel__caption {
   background-color: rgba(0, 0, 0, 0.5);
@@ -161,7 +148,7 @@
   gap: 2rem;
   place-content: center space-around; }
 
-.product-card {
+.card {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -178,25 +165,7 @@
   transition: all 0.7s ease;
   width: 18.75rem;
   flex: 0 0 auto; }
-  .product-card .card-img-top {
-    width: 100%;
-    height: 15.625rem;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0; }
-  .product-card .card-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3rem 1.875rem 2.6875rem;
-    gap: 0.5rem;
-    justify-content: center;
-    align-content: center;
-    place-items: center; }
-  .product-card .card-title {
-    margin-bottom: 0; }
-  .product-card:hover {
-    box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
-    transform: translateY(-3%); }
-  .product-card--badge-off {
+  .card--badge-off {
     background-color: #01ff5f;
     color: #2A2E34;
     font-family: "Sofia Pro", sans-serif;
@@ -306,55 +275,6 @@
   padding: 2rem;
   gap: 2rem;
   place-content: center space-around; }
-
-.navbar {
-  background-color: rgba(42, 46, 52, 0.9);
-  font-family: "Cubano", sans-serif;
-  font-size: 1.2rem;
-  padding: 1rem;
-  z-index: 10;
-  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
-  position: sticky;
-  top: 0; }
-  @media (min-width: 992px) {
-    .navbar .cart {
-      display: none; } }
-  .navbar .navbar-nav .nav-item {
-    margin: 0 0.5rem; }
-    .navbar .navbar-nav .nav-item .active {
-      background-color: #51C5F7;
-      color: #2A2E34; }
-  .navbar .navbar-nav .nav-link {
-    color: #F5F5F5;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    transition: 0.7s; }
-    .navbar .navbar-nav .nav-link:hover {
-      padding: 0.5rem;
-      background-color: #01ff5f;
-      color: #2A2E34; }
-  .navbar .navbar-collapse {
-    text-align: center; }
-    .navbar .navbar-collapse .cartBar {
-      display: none;
-      font-size: 1.25rem; }
-      @media (min-width: 992px) {
-        .navbar .navbar-collapse .cartBar {
-          display: block; } }
-  .navbar .cartLink {
-    color: #F5F5F5;
-    font-size: 1.7rem;
-    padding: 0.25rem;
-    transition: 0.7s;
-    border-radius: 0.5rem; }
-    .navbar .cartLink:hover {
-      color: #12181B;
-      background-color: #01ff5f; }
-  .navbar .badgeCart {
-    background-color: #ff0087;
-    color: #F5F5F5;
-    font-family: "Sofia Pro", sans-serif;
-    font-size: 0.9rem; }
 
 .video__iframe, .map__iframe {
   border-radius: 0.5rem;
@@ -624,10 +544,28 @@
   background-color: #01ff5f;
   box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5); }
 
-.header .title__site, .header .title__link {
+.btn {
+  text-transform: uppercase;
+  font-family: "Sofia Pro", sans-serif;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
+
+.btn-outline-success {
+  color: #51C5F7;
+  border-color: #51C5F7;
+  box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
+  transition: 0.7s; }
+  .btn-outline-success:hover {
+    color: #2A2E34;
+    border-color: #51C5F7;
+    background-color: #51C5F7; }
+
+.header__title-site, .header__link {
   color: #F5F5F5;
   text-decoration: none; }
-  .header .title__site:hover, .header .title__link:hover {
+  .header__title-site:hover, .header__link:hover {
     color: #F5F5F5; }
 
 @media (min-width: 0) {
@@ -638,10 +576,10 @@
     align-items: center;
     background-image: linear-gradient(to left, #12181B, #2A2E35);
     padding: 0.625rem; }
-    .header .logo__site {
+    .header__logo-site {
       width: 15rem;
       height: 15rem; }
-    .header .title__site {
+    .header__title-site {
       display: none;
       font-family: "Cubano", sans-serif; } }
 
@@ -652,32 +590,112 @@
     grid-template-areas: "logo title title .";
     justify-content: center;
     align-content: center; }
-    .header .logo {
+    .header__logo {
       grid-area: logo;
       display: flex;
       justify-content: start;
       align-items: center; }
-      .header .logo__site {
-        width: 10rem;
-        height: 10rem; }
-    .header .title {
+    .header__logo-site {
+      width: 10rem;
+      height: 10rem; }
+    .header__title {
       grid-area: title;
       text-align: center; }
-      .header .title__site {
-        display: inline;
-        font-size: 2.5rem; }
-      .header .title__subtitle-site {
-        display: block;
-        background-image: linear-gradient(to right, #ff0087, #51C5F7);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent; } }
+    .header__title-site {
+      display: inline;
+      font-size: 2.5rem; }
+    .header__subtitle-site {
+      display: block;
+      background-image: linear-gradient(to right, #ff0087, #51C5F7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; } }
 
 @media (min-width: 768px) {
-  .header .title__site {
+  .header__title-site {
     font-size: 3.5rem; } }
 
-.main {
-  text-align: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 23.875rem;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 1rem;
+  background-image: linear-gradient(to bottom, #12181B, #2A2E35);
+  border-radius: 1rem;
+  color: #F5F5F5;
   font-family: "Sofia Pro", sans-serif;
-  color: #F5F5F5; }
+  font-size: 1.2rem;
+  box-shadow: 0rem 0.0625rem 0.625rem rgba(0, 0, 0, 0.5);
+  transition: all 0.7s ease;
+  width: 18.75rem;
+  flex: 0 0 auto; }
+  .card .card-img-top {
+    width: 100%;
+    height: 15.625rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0; }
+  .card .card-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1.875rem 2.6875rem;
+    gap: 0.5rem;
+    justify-content: center;
+    align-content: center;
+    place-items: center; }
+  .card .card-title {
+    margin-bottom: 0; }
+  .card:hover {
+    box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-3%); }
+
+.navbar {
+  background-color: rgba(42, 46, 52, 0.9);
+  font-family: "Cubano", sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  z-index: 10;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0; }
+  @media (min-width: 992px) {
+    .navbar .cart {
+      display: none; } }
+  .navbar .navbar-nav .nav-item {
+    margin: 0 0.5rem; }
+    .navbar .navbar-nav .nav-item .active {
+      background-color: #51C5F7;
+      color: #2A2E34; }
+  .navbar .navbar-nav .nav-link {
+    color: #F5F5F5;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: 0.7s; }
+    .navbar .navbar-nav .nav-link:hover {
+      padding: 0.5rem;
+      background-color: #01ff5f;
+      color: #2A2E34; }
+  .navbar .navbar-collapse {
+    text-align: center; }
+    .navbar .navbar-collapse .cartBar {
+      display: none;
+      font-size: 1.25rem; }
+      @media (min-width: 992px) {
+        .navbar .navbar-collapse .cartBar {
+          display: block; } }
+  .navbar .cartLink {
+    color: #F5F5F5;
+    font-size: 1.7rem;
+    padding: 0.25rem;
+    transition: 0.7s;
+    border-radius: 0.5rem; }
+    .navbar .cartLink:hover {
+      color: #12181B;
+      background-color: #01ff5f; }
+  .navbar .badgeCart {
+    background-color: #ff0087;
+    color: #F5F5F5;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 0.9rem; }

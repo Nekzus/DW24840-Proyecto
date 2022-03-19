@@ -1,16 +1,12 @@
 // HEADER
 .header {
 
-    .title {
-
-        &__site,
-        &__link {
+    &__title-site,
+    &__link {
+        color: $color-font-primary;
+        text-decoration: none;
+        &:hover {
             color: $color-font-primary;
-            text-decoration: none;
-
-            &:hover {
-                color: $color-font-primary;
-            }
         }
     }
 
@@ -21,19 +17,13 @@
         align-items: center;
         background-image: linear-gradient(to left, $color-bg-primary, $color-bg-secondary);
         padding: 0.625rem;
-
-        .logo {
-            &__site {
-                width: 15rem;
-                height: 15rem;
-            }
+        &__logo-site {
+            width: 15rem;
+            height: 15rem;
         }
-
-        .title {
-            &__site {
-                display: none;
-                font-family: $font-primary;
-            }
+        &__title-site {
+            display: none;
+            font-family: $font-primary;
         }
     }
 
@@ -43,44 +33,36 @@
         grid-template-areas: "logo title title .";
         justify-content: center;
         align-content: center;
-
-        .logo {
+        &__logo {
             grid-area: logo;
             display: flex;
             justify-content: start;
             align-items: center;
-
-            &__site {
-                width: 10rem;
-                height: 10rem;
-            }
         }
-
-        .title {
+        &__logo-site {
+            width: 10rem;
+            height: 10rem;
+        }
+        &__title {
             grid-area: title;
             text-align: center;
-
-            &__site {
-                display: inline;
-                font-size: 2.5rem;
-            }
-
-            &__subtitle-site {
-                display: block;
-                background-image: linear-gradient(to right, $color-pink, $color-blue);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
+        }
+        &__title-site {
+            display: inline;
+            font-size: 2.5rem;
+        }
+        &__subtitle-site {
+            display: block;
+            background-image: linear-gradient(to right, $color-pink, $color-blue);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 
     @include md {
-        .title {
-            &__site {
-                font-size: 3.5rem;
-            }
+        &__title-site {
+            font-size: 3.5rem;
         }
     }
-
 }
