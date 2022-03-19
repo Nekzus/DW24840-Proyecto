@@ -15,7 +15,6 @@
         color: $color-font-primary;
         font-family: $font-secondary;
         font-size: 1.2rem;
-        border-radius: 0.5rem;
     }
 
     &__filters {
@@ -46,15 +45,6 @@
 }
 
 .home {
-    @include subtitle;
-
-    &__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, auto);
-        padding: 2rem;
-    }
-
     &__products {
         display: flex;
         flex-wrap: nowrap;
@@ -62,7 +52,7 @@
         gap: 1.25rem;
         padding: 1.25rem;
     }
-
+    @include block-container(&__products);
 }
 
 .product-card {
@@ -83,36 +73,29 @@
 }
 
 .form {
-    @include subtitle;
+    
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        border-radius: 1rem;
+        width: MIN(40rem, 100%);
+        height: 100%;
+        padding: 1rem;
 
-    &__container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-areas:
-            "subtitleForm"
-            "form";
-        gap: 2rem;
-        padding: 2rem;
-        color: $color-font-primary;
-        font-family: $font-secondary;
-        font-size: 1.2rem;
-        border-radius: 0.5rem;
-
+        &--center-items-grid {
+            justify-self: center;
+            align-self: center;
+        }
     }
+    @include block-container(&__form-group);
 }
 
-.multimedia {
-    @include subtitle;
+.video{
+    @include block-container(&__content);
+}
 
-    &__container {
-        padding: 0 2rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "subtitleVideo"
-            "videoContainer"
-            "subtitleMap"
-            "mapContainer";
-        place-content: center;
-    }
+.map {
+    @include block-container(&__content);
 }

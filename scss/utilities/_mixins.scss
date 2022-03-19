@@ -83,3 +83,16 @@
         color: $hv-color;
     }
 }
+
+@mixin block-container ($content:'') {
+    @include subtitle;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        padding: 2rem;
+        gap: 2rem;
+        place-content: center space-around;
+    }
+}

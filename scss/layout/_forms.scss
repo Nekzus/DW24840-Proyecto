@@ -16,28 +16,6 @@
         border-radius: 0.5rem;
         font-family: $font-secondary;
         font-size: 1rem;
-
-        &:focus {
-            background-color: $color-bg-secondary;
-            color: $color-font-primary;
-        }
-    }
-
-    &__form-group {
-        grid-area: form;
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
-        border-radius: 1rem;
-        width: MIN(40rem, 100%);
-        height: 100%;
-        padding: 1rem;
-
-        &--center-items-grid {
-            justify-self: center;
-            align-self: center;
-        }
     }
 
     &__label {

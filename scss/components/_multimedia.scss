@@ -1,22 +1,5 @@
 // MULTIMEDIA
-.multimedia {
-    .subtitle-video {
-        grid-area: subtitleVideo;
-    }
-
-    .videoContainer {
-        grid-area: videoContainer;
-    }
-
-    .subtitleMap {
-        grid-area: subtitleMap;
-
-    }
-
-    .mapContainer {
-        grid-area: mapContainer;
-    }
-
+.video, .map {
     &__iframe {
         border-radius: 0.5rem;
         margin: 3rem;

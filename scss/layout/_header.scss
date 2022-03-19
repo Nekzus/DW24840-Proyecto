@@ -1,12 +1,13 @@
 // HEADER
 .header {
-    
+
     .title {
+
         &__site,
         &__link {
             color: $color-font-primary;
             text-decoration: none;
-    
+
             &:hover {
                 color: $color-font-primary;
             }
@@ -35,26 +36,26 @@
             }
         }
     }
-    
+
     @include sm {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "logo title title .";
         justify-content: center;
         align-content: center;
-        
+
         .logo {
             grid-area: logo;
             display: flex;
             justify-content: start;
             align-items: center;
-            
+
             &__site {
                 width: 10rem;
                 height: 10rem;
             }
         }
-        
+
         .title {
             grid-area: title;
             text-align: center;
@@ -63,16 +64,17 @@
                 display: inline;
                 font-size: 2.5rem;
             }
-            
+
             &__subtitle-site {
                 display: block;
                 background-image: linear-gradient(to right, $color-pink, $color-blue);
                 -webkit-background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
     }
-    
+
     @include md {
         .title {
             &__site {
@@ -80,5 +82,5 @@
             }
         }
     }
-    
+
 }
