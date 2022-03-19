@@ -171,14 +171,14 @@ header a:hover {
 
 }
 
-.btn-outline-info {
+.btn-outline-success {
   color: var(--color-blue);
   border-color: var(--color-blue);
   box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
   transition: 0.7s;
 }
 
-.btn-outline-info:hover {
+.btn-outline-success:hover {
   color: var(--color-font-secondary);
   border-color: var(--color-blue);
   background-color: var(--color-blue);

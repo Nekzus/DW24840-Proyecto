@@ -66,6 +66,9 @@
             
             &__subtitle-site {
                 display: block;
+                background-image: linear-gradient(to right, $color-pink, $color-blue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
     }

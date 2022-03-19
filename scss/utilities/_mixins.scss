@@ -8,15 +8,9 @@
         background-color: $bg-color;
         box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
         border-radius: 0.5rem;
+        justify-self: normal;
+        align-self: center;
 
-        @include xs {
-            justify-self: center;
-            align-self: center;
-        }
-
-        @include sm {
-            justify-self: normal;
-        }
     }
 
     &__content-subtitle {
