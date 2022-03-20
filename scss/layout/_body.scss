@@ -15,12 +15,18 @@
         font-family: $font-secondary;
         margin: 0;
     }
-
-    background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+    background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 0.5rem 0.5rem,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 0.06rem,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0.5rem 0.56rem;
+    background-color: $color-bg-secondary;
+    background-size:1rem 1rem;
+    background-attachment: fixed;
+    background-position: center;
+    
+input:focus,
+textarea:focus {
+    background-color: $color-bg-secondary;
     color: $color-font-primary;
-
-    input:focus, textarea:focus {
-        background-color: $color-bg-secondary;
-        color: $color-font-primary;
-    }
+}
 }
