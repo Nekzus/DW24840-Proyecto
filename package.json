@@ -1,7 +1,7 @@
 {
   "name": "proyecto-final-dw24840",
-  "version": "1.0.0",
-  "description": "Proyecto final DW24840",
+  "version": "0.0.1",
+  "description": "Proyecto final DW24840 - proyecto final del curso de Desarrollo Web. Se basa en un sitio de e-commerce para venta de productos gamer, con la finalidad de que los usuarios puedan adquirirlos en cualquier momento y lugar ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Nekzus/DW24840-Proyecto.git"
   },
-  "author": "Nekzus",
+  "author": "Mauricio Ortega(Nekzus)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Nekzus/DW24840-Proyecto/issues"
