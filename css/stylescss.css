@@ -115,14 +115,14 @@
   background-color: #01ff5f;
   box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5); }
 
-.home__products {
+.featured__products {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
   gap: 1.25rem;
   padding: 1.25rem; }
 
-.home__subtitle {
+.featured__subtitle {
   grid-column: 1/-1;
   grid-template-rows: 3.125rem;
   color: #2A2E34;
@@ -133,22 +133,58 @@
   justify-self: normal;
   align-self: center; }
 
-.home__content-subtitle {
+.featured__content-subtitle {
   display: block;
   text-align: center;
   margin-bottom: 0;
   font-family: "Cubano", sans-serif; }
   @media (min-width: 768px) {
-    .home__content-subtitle {
+    .featured__content-subtitle {
       text-align: start;
       margin-left: 2rem; } }
 
-.home__container {
+.featured__container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   padding: 2rem;
-  gap: 2rem;
+  gap: 1rem;
+  place-content: center space-around; }
+
+.offers__products {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 1.25rem;
+  padding: 1.25rem; }
+
+.offers__subtitle {
+  grid-column: 1/-1;
+  grid-template-rows: 3.125rem;
+  color: #2A2E34;
+  padding: 1rem;
+  background-color: #9166CC;
+  box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  justify-self: normal;
+  align-self: center; }
+
+.offers__content-subtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: "Cubano", sans-serif; }
+  @media (min-width: 768px) {
+    .offers__content-subtitle {
+      text-align: start;
+      margin-left: 2rem; } }
+
+.offers__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  padding: 2rem;
+  gap: 1rem;
   place-content: center space-around; }
 
 .card {
@@ -501,18 +537,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .form__button {
-    text-transform: uppercase;
-    font-family: "Sofia Pro", sans-serif;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem; }
-    .form__button--btn-news {
-      font-size: 0.8rem;
-      padding: 0.5em;
-      margin-left: 0.5em;
-      margin-right: 0.5em; }
+  .form__button--btn-news {
+    font-size: 0.8rem;
+    padding: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
   .form__email {
     margin: 0.5rem;
     border-radius: 0.5rem; }
@@ -551,7 +580,7 @@
   background-color: #01ff5f;
   box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5); }
 
-.btn {
+.btn, .form__button {
   text-transform: uppercase;
   font-family: "Sofia Pro", sans-serif;
   border-radius: 0.5rem;
@@ -570,10 +599,10 @@
     background-color: #51C5F7; }
 
 .header__title-site, .header__link {
-  color: #F5F5F5;
+  color: #ff0087;
   text-decoration: none; }
   .header__title-site:hover, .header__link:hover {
-    color: #F5F5F5; }
+    color: #ff0087; }
 
 @media (min-width: 0) {
   .header {

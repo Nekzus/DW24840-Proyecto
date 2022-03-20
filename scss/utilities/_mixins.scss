@@ -1,4 +1,6 @@
 // MIXINS
+
+// GENERADOR DE SUBTITULOS SECCIONES
 @mixin subtitle($bg-color: $color-violet, $ft-color: $color-font-secondary) {
     &__subtitle {
         grid-column: 1/-1;
@@ -27,6 +29,7 @@
 
 }
 
+// GENERADOR DE CARDS
 @mixin card() {
     display: flex;
     flex-direction: column;
@@ -44,9 +47,23 @@
     transition: all 0.7s ease;
     width: 18.75rem;
     flex: 0 0 auto;
-
 }
 
+// GENERADOR DE CONTENEDORES
+@mixin block-container ($content:'',$gap: 2rem, $bg-color: $color-violet, $ft-color: $color-font-secondary) {
+    @include subtitle($bg-color, $ft-color);
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        padding: 2rem;
+        gap: $gap;
+        place-content: center space-around;
+    }
+}
+
+// CONTROL DISEÑO ICONOS
 @mixin social-icon ($hv-color:'', $ft-color: $color-font-primary) {
     padding: 0.5rem;
     font-size: 2rem;
@@ -55,18 +72,5 @@
     &:hover {
         transition: 0.7s;
         color: $hv-color;
-    }
-}
-
-@mixin block-container ($content:'', $bg-color: $color-violet, $ft-color: $color-font-secondary) {
-    @include subtitle($bg-color, $ft-color);
-
-    &__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, auto);
-        padding: 2rem;
-        gap: 2rem;
-        place-content: center space-around;
     }
 }

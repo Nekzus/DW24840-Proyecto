@@ -1,4 +1,6 @@
 // CONTAINERS
+
+// CONTENEDOR PRODUCTOS CON FILTROS DE CATEGORIAS Y ORDEN
 .products {
     @include subtitle;
 
@@ -44,7 +46,8 @@
     }
 }
 
-.home {
+// CONTENEDOR DE PRODUCTOS DESTACADOS
+.featured {
     &__products {
         display: flex;
         flex-wrap: nowrap;
@@ -52,9 +55,22 @@
         gap: 1.25rem;
         padding: 1.25rem;
     }
-    @include block-container(&__products);
+    @include block-container(&__products, 1rem);
 }
 
+// CONTENEDOR DE PRODUCTOS EN OFERTA
+.offers {
+    &__products {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+    @include block-container(&__products, 1rem);
+}
+
+// CONTENEDOR PARA CARD DE PRODUCTO
 .card {
 
     @include card;
@@ -72,6 +88,7 @@
     }
 }
 
+// CONTENEDOR DE FORMULARIOS
 .form {
     
     &__form-group {
@@ -92,10 +109,12 @@
     @include block-container(&__form-group);
 }
 
+// CONTENEDOR DE MULTIMEDIA - VIDEO PRESENTACION
 .video{
     @include block-container(&__content);
 }
 
+// CONTENEDOR DE MULTIMEDIA - MAPA
 .map {
     @include block-container(&__content);
 }

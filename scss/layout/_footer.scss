@@ -165,12 +165,7 @@
     align-items: center;
 
     &__button {
-        text-transform: uppercase;
-        font-family: $font-secondary;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        @extend .btn;
 
         &--btn-news {
             font-size: 0.8rem;
