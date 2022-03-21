@@ -1,9 +1,32 @@
 // FORMS
 .form {
 
+    &__camp {
+        opacity: 0;
+
+        &--fade-in-up {
+            opacity: 0;
+            animation-name: fade-in-up;
+        }
+
+        &--animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+    }
+
     &__button-submit {
         margin-top: 1rem;
         margin-bottom: 1rem;
+        &--fade-in-up {
+            opacity: 0;
+            animation-name: fade-in-up;
+        }
+
+        &--animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
     }
 
     &__control {
@@ -42,3 +65,9 @@
         box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
     }
 }
+
+
+
+
+
+

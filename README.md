@@ -14,7 +14,7 @@ Este trabajo surge como proyecto final del curso de Desarrollo Web. Se basa en u
 
 ## Estado del proyecto 📋
 
-✅ Completo - finalizado.
+✅ Incompleto - en proceso...
 
 ## Tecnología aplicada 🛠️
 - HTML5

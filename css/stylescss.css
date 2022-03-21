@@ -1,20 +1,27 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@keyframes fade-in-up {
+  from {
+    transform: translate3d(0, 40px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
 @font-face {
   font-family: "Cubano";
   src: url("../fonts/Cubano.ttf");
   font-weight: 400;
-  font-display: fallback; }
+  font-display: swap; }
 
 @font-face {
   font-family: "Sofia Pro";
   src: url("../fonts/sofiapro-light.otf");
-  font-display: fallback; }
+  font-display: swap; }
 
 @font-face {
   font-family: "Roboto Mono";
   src: url("../fonts/RobotoMono-Light.ttf");
-  font-display: fallback; }
+  font-display: swap; }
 
 * {
   margin: 0;
@@ -227,6 +234,12 @@
   .form__form-group--center-items-grid {
     justify-self: center;
     align-self: center; }
+  .form__form-group--fade-in-up {
+    opacity: 0;
+    animation-name: fade-in-up; }
+  .form__form-group--animated {
+    animation-duration: 1s;
+    animation-fill-mode: both; }
 
 .form__subtitle {
   grid-column: 1/-1;
@@ -546,9 +559,24 @@
     margin: 0.5rem;
     border-radius: 0.5rem; }
 
+.form__camp {
+  opacity: 0; }
+  .form__camp--fade-in-up {
+    opacity: 0;
+    animation-name: fade-in-up; }
+  .form__camp--animated {
+    animation-duration: 1s;
+    animation-fill-mode: both; }
+
 .form__button-submit {
   margin-top: 1rem;
   margin-bottom: 1rem; }
+  .form__button-submit--fade-in-up {
+    opacity: 0;
+    animation-name: fade-in-up; }
+  .form__button-submit--animated {
+    animation-duration: 1s;
+    animation-fill-mode: both; }
 
 .form__control {
   font-weight: bold; }

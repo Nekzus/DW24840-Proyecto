@@ -3,17 +3,17 @@
     font-family: "Cubano";
     src: url("../fonts/Cubano.ttf");
     font-weight: 400;
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Sofia Pro";
     src: url("../fonts/sofiapro-light.otf");
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Roboto Mono";
     src: url("../fonts/RobotoMono-Light.ttf");
-    font-display: fallback;
+    font-display: swap;
 }
