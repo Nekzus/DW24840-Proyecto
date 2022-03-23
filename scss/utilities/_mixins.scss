@@ -50,9 +50,9 @@
 }
 
 // GENERADOR DE CONTENEDORES
-@mixin block-container ($content:'',$gap: 2rem, $bg-color: $color-violet, $ft-color: $color-font-secondary) {
+@mixin block-container ($content:'', $gap: 2rem, $bg-color: $color-violet, $ft-color: $color-font-secondary) {
     @include subtitle($bg-color, $ft-color);
-
+    @content;
     &__container {
         display: grid;
         grid-template-columns: 1fr;
