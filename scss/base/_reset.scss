@@ -15,11 +15,11 @@ html {
         font-size: 100%;
     }
 
-    @include breakpoint($bp: 3700px) {
+    @include breakpoint($bp: 3840px) {
         font-size: 120%;
     }
 
-    @include breakpoint($bp: 3840px) {
+    @include breakpoint($bp: 4000px) {
         font-size: 150%;
     }
 }

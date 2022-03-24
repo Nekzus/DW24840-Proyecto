@@ -65,9 +65,9 @@
 }
 
 // CONTROL DISEÑO ICONOS
-@mixin social-icon ($hv-color:'', $ft-color: var(--color-font-primary)) {
-    padding: 0.5rem;
-    font-size: 2rem;
+@mixin social-icon ($hv-color:'', $ft-size: 2rem, $ft-padding: 0.5rem, $ft-color: var(--color-font-primary)) {
+    padding: $ft-padding;
+    font-size: $ft-size;
     color: $ft-color;
 
     &:hover {
@@ -79,24 +79,25 @@
 // CONTROL DARK/LIGHT MODE
 @mixin theme ($theme-dark: '') {
     @if $theme-dark {
-        .body {
-            &--dark {
-                --color-bg-primary: #{$color-bg-primary-dark};
-                --color-bg-secondary: #{$color-bg-secondary-dark};
-                --color-font-primary: #{$color-font-primary-dark};
-                --color-font-secondary: #{$color-font-secondary-dark};
-                --color-shadow: #{$color-shadow-dark};
-                --color-bg-navbar: #{$color-bg-navbar-dark};
-                --color-violet: #{$color-violet-dark};
-                --color-green: #{$color-green-dark};
-                --color-pink: #{$color-pink-dark};
-                --color-blue: #{$color-blue-dark};
-                --color-instagram: #{$color-instagram-dark};
-                --color-youtube: #{$color-youtube-dark};
-                --color-facebook: #{$color-facebook-dark};
-                --color-gradient-1-black: #{$color-gradient-1-black-dark};
-                --color-gradient-2-black: #{$color-gradient-2-black-dark};
-            }
+        :root {
+            --color-bg-primary: #{$color-bg-primary-dark};
+            --color-bg-secondary: #{$color-bg-secondary-dark};
+            --color-font-primary: #{$color-font-primary-dark};
+            --color-font-secondary: #{$color-font-secondary-dark};
+            --color-shadow: #{$color-shadow-dark};
+            --color-bg-navbar: #{$color-bg-navbar-dark};
+            --color-violet: #{$color-violet-dark};
+            --color-green: #{$color-green-dark};
+            --color-pink: #{$color-pink-dark};
+            --color-blue: #{$color-blue-dark};
+            --color-instagram: #{$color-instagram-dark};
+            --color-youtube: #{$color-youtube-dark};
+            --color-facebook: #{$color-facebook-dark};
+            --color-github: #{$color-github-dark};
+            --color-linkedin: #{$color-linkedin-dark};
+            --color-gradient-1-black: #{$color-gradient-1-black-dark};
+            --color-gradient-2-black: #{$color-gradient-2-black-dark};
+            --color-toggler: #{$color-toggler-dark};
         }
     }
 
@@ -115,8 +116,45 @@
             --color-instagram: #{$color-instagram};
             --color-youtube: #{$color-youtube};
             --color-facebook: #{$color-facebook};
+            --color-github: #{$color-github};
+            --color-linkedin: #{$color-linkedin};
             --color-gradient-1-black: #{$color-gradient-1-black};
             --color-gradient-2-black: #{$color-gradient-2-black};
+            --color-toggler: #{$color-toggler};
         }
     }
+}
+
+@mixin theme-button ($theme: light) {
+    .btn {
+        @if ($theme==dark) {
+            &--dark {
+                color: var(--color-blue);
+                border-color: var(--color-blue);
+                box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
+                transition: 0.7s;
+                &:hover {
+                    color: var(--color-font-secondary);
+                    border-color: var(--color-blue);
+                    background-color: var(--color-blue);
+                }
+            }
+        }
+        
+        @else if ($theme==light) {
+            &--light {
+                color: var(--color-font-primary);
+                border-color: var(--color-blue);
+                box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
+                background-color: var(--color-blue);
+                transition: 0.7s;
+                &:hover {
+                    color: var(--color-font-secondary);
+                    border-color: var(--color-green);
+                    background-color: var(--color-green);
+                }
+            }
+        }
+    }
+
 }

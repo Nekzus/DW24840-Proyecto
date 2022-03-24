@@ -1,37 +1,17 @@
-
 // APLICAR DARK MODE PREFERENCIA SISTEMA
 @media (prefers-color-scheme: dark) {
     @include theme (true);
 
     .navbar-toggler {
-        border-color: var(--color-font-primary);
-
+        border-color: var(--color-toggler);
+        &:focus {
+            box-shadow: 0 0 0 var(--color-toggler);
+        }
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
     }
-
-    .btn {
-        text-transform: uppercase;
-        font-family: var(--font-secondary);
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-
-        &--dark {
-            color: var(--color-blue);
-            border-color: var(--color-blue);
-            box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
-            transition: 0.7s;
-
-            &:hover {
-                color: var(--color-font-secondary);
-                border-color: var(--color-blue);
-                background-color: var(--color-blue);
-            }
-        }
-    }
+    @include theme-button (dark);
 }
 
 // APLICAR LIGHT MODE PREFERENCIA SISTEMA
@@ -39,33 +19,13 @@
     @include theme (false);
 
     .navbar-toggler {
-        border-color: var(--color-font-primary);
-
+        border-color: var(--color-toggler);
+        &:focus {
+            box-shadow: 0 0 0 var(--color-toggler);
+        }
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
     }
-
-    .btn {
-        text-transform: uppercase;
-        font-family: var(--font-secondary);
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-
-        &--light {
-            color: var(--color-font-primary);
-            border-color: var(--color-blue);
-            box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
-            background-color: var(--color-blue);
-            transition: 0.7s;
-
-            &:hover {
-                color: var(--color-font-secondary);
-                border-color: var(--color-green);
-                background-color: var(--color-green);
-            }
-        }
-    }
+    @include theme-button (light);
 }

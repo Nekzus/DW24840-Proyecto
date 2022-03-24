@@ -14,8 +14,11 @@ $color-blue: #339AF7;
 $color-instagram: #BC1885;
 $color-youtube: #F21100;
 $color-facebook: #3F62A8;
+$color-github: #BC1885;
+$color-linkedin: #0A66C2;
 $color-gradient-1-black: rgb(128, 108, 108);
 $color-gradient-2-black: rgba(65, 47, 47, 0.1);
+$color-toggler:rgba(0, 0, 0, 0.55);
 
 // DARK MODE
 $color-bg-primary-dark: #12181B;
@@ -31,10 +34,13 @@ $color-blue-dark: #51C5F7;
 $color-instagram-dark: #BC1885;
 $color-youtube-dark: #F21100;
 $color-facebook-dark: #3F62A8;
+$color-github-dark: #BC1885;
+$color-linkedin-dark: #0A66C2;
 $color-gradient-1-black-dark: black;
 $color-gradient-2-black-dark: rgba(255, 255, 255, .1);
+$color-toggler-dark:rgba(255, 255, 255, 0.55);
 
-
+//Fonts
 $font-primary: "Cubano",
 sans-serif;
 $font-secondary: "Sofia Pro",
