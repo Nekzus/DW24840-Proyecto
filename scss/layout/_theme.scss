@@ -1,24 +1,7 @@
 // VARIABLES CSS
 
-// LIGHT MODE
+//Fonts
 :root {
-    --color-bg-primary: #{$color-bg-primary};
-    --color-bg-secondary: #{$color-bg-secondary};
-    --color-font-primary: #{$color-font-primary};
-    --color-font-secondary: #{$color-font-secondary};
-    --color-shadow: #{$color-shadow};
-    --color-bg-navbar: #{$color-bg-navbar};
-    --color-violet: #{$color-violet};
-    --color-green: #{$color-green};
-    --color-pink: #{$color-pink};
-    --color-blue: #{$color-blue};
-    --color-instagram: #{$color-instagram};
-    --color-youtube: #{$color-youtube};
-    --color-facebook: #{$color-facebook};
-    --color-gradient-1-black: #{$color-gradient-1-black};
-    --color-gradient-2-black: #{$color-gradient-2-black};
-
-    //Fonts
     --font-primary: #{$font-primary};
     --font-secondary: #{$font-secondary};
     --font-tertiary: #{$font-tertiary};
@@ -27,4 +10,9 @@
 // APLICAR DARK MODE PREFERENCIA SISTEMA
 @media (prefers-color-scheme: dark) {
     @include theme (true);
+}
+
+// APLICAR LIGHT MODE PREFERENCIA SISTEMA
+@media (prefers-color-scheme: light) {
+    @include theme (false);
 }
