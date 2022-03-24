@@ -22,7 +22,7 @@
     }
 
     &:hover {
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
         transform: translateY(-3%);
     }
 }

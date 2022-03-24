@@ -1,14 +1,14 @@
 // MIXINS
 
 // GENERADOR DE SUBTITULOS SECCIONES
-@mixin subtitle($bg-color: $color-violet, $ft-color: $color-font-secondary) {
+@mixin subtitle($bg-color: var(--color-violet), $ft-color: var(--color-font-secondary)) {
     &__subtitle {
         grid-column: 1/-1;
         grid-template-rows: 3.125rem;
         color: $ft-color;
         padding: 1rem;
         background-color: $bg-color;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
         border-radius: 0.5rem;
         justify-self: normal;
         align-self: center;
@@ -19,7 +19,7 @@
         display: block;
         text-align: center;
         margin-bottom: 0;
-        font-family: $font-primary;
+        font-family: var(--font-primary);
 
         @include md {
             text-align: start;
@@ -38,19 +38,19 @@
     justify-content: space-between;
     align-items: center;
     row-gap: 1rem;
-    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
     border-radius: 1rem;
-    color: $color-font-primary;
-    font-family: $font-secondary;
+    color: var(--color-font-primary);
+    font-family: var(--font-secondary);
     font-size: 1.2rem;
-    box-shadow: 0rem 0.0625rem 0.625rem $color-shadow;
+    box-shadow: 0rem 0.0625rem 0.625rem var(--color-shadow);
     transition: all 0.7s ease;
     width: 18.75rem;
     flex: 0 0 auto;
 }
 
 // GENERADOR DE CONTENEDORES
-@mixin block-container ($content:'', $gap: 2rem, $bg-color: $color-violet, $ft-color: $color-font-secondary) {
+@mixin block-container ($content:'', $gap: 2rem, $bg-color: var(--color-violet), $ft-color: var(--color-font-secondary)) {
     @include subtitle($bg-color, $ft-color);
     @content;
     &__container {
@@ -64,7 +64,7 @@
 }
 
 // CONTROL DISEÑO ICONOS
-@mixin social-icon ($hv-color:'', $ft-color: $color-font-primary) {
+@mixin social-icon ($hv-color:'', $ft-color: var(--color-font-primary)) {
     padding: 0.5rem;
     font-size: 2rem;
     color: $ft-color;
@@ -72,5 +72,30 @@
     &:hover {
         transition: 0.7s;
         color: $hv-color;
+    }
+}
+
+// CONTROL DARK MODE
+@mixin theme ($theme-dark: false) {
+    @if $theme-dark {
+        .body {
+            &--dark {
+                --color-bg-primary: #{$color-bg-primary-dark};
+                --color-bg-secondary: #{$color-bg-secondary-dark};
+                --color-font-primary: #{$color-font-primary-dark};
+                --color-font-secondary: #{$color-font-secondary-dark};
+                --color-shadow: #{$color-shadow-dark};
+                --color-bg-navbar: #{$color-bg-navbar-dark};
+                --color-violet: #{$color-violet-dark};
+                --color-green: #{$color-green-dark};
+                --color-pink: #{$color-pink-dark};
+                --color-blue: #{$color-blue-dark};
+                --color-instagram: #{$color-instagram-dark};
+                --color-youtube: #{$color-youtube-dark};
+                --color-facebook: #{$color-facebook-dark};
+                --color-gradient-1-black: #{$color-gradient-1-black-dark};
+                --color-gradient-2-black: #{$color-gradient-2-black-dark};
+            }
+        }
     }
 }

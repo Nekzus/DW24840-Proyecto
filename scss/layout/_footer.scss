@@ -13,17 +13,17 @@
     place-items: center;
     row-gap: 2rem;
     text-align: center;
-    background-image: linear-gradient(to top, var$color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to top, varvar(--color-bg-primary), var(--color-bg-secondary));
     padding: 2rem;
-    color: $color-font-primary;
-    font-family: $font-secondary;
+    color: var(--color-font-primary);
+    font-family: var(--font-secondary);
 }
 
 .section-about {
-    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+    box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
 
     &__desc-about {
         font-size: 1.2rem;
@@ -31,11 +31,11 @@
     }
 
     &__title-about {
-        color: $color-font-secondary;
-        background-color: $color-pink;
+        color: var(--color-font-secondary);
+        background-color: var(--color-pink);
         border-radius: 0.5rem;
         padding: 0.5rem;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
     }
 }
 
@@ -69,11 +69,11 @@
     align-items: center;
     border-style: solid;
     padding: 0.8rem;
-    background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to top, var(--color-bg-primary), var(--color-bg-secondary));
     border-radius: 2rem;
     border-width: 0.1rem;
-    border-color: $color-violet;
-    box-shadow: 0rem 0.0625rem 0.625rem $color-violet;
+    border-color: var(--color-violet);
+    box-shadow: 0rem 0.0625rem 0.625rem var(--color-violet);
 
     &__title {
         grid-area: titulo;
@@ -94,24 +94,24 @@
     gap: 1rem;
     border-style: solid;
     padding: 1.5rem;
-    background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to top, var(--color-bg-primary), var(--color-bg-secondary));
     border-radius: 2rem;
     border-width: 0.1rem;
-    border-color: $color-blue;
-    box-shadow: 0rem 0.0625rem 0.625rem $color-blue;
+    border-color: var(--color-blue);
+    box-shadow: 0rem 0.0625rem 0.625rem var(--color-blue);
 
     &__link {
 
         &--facebook {
-            @include social-icon($hv-color: $color-facebook)
+            @include social-icon ($hv-color: var(--color-facebook))
         }
 
         &--instagram {
-            @include social-icon($hv-color: $color-instagram)
+            @include social-icon($hv-color: var(--color-instagram))
         }
 
         &--youtube {
-            @include social-icon($hv-color: $color-youtube)
+            @include social-icon($hv-color: var(--color-youtube))
         }
     }
 
@@ -127,11 +127,11 @@
     grid-area: contact;
     border-style: solid;
     padding: 1rem;
-    background-image: linear-gradient(to top, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to top, var(--color-bg-primary), var(--color-bg-secondary));
     border-radius: 2rem;
     border-width: 0.1rem;
-    border-color: $color-green;
-    box-shadow: 0rem 0.0625rem 0.625rem $color-green;
+    border-color: var(--color-green);
+    box-shadow: 0rem 0.0625rem 0.625rem var(--color-green);
 
     &__text {
         &--telephone {
@@ -147,13 +147,13 @@
 }
 
 .copyright {
-    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
     padding: 1.5rem;
 
     &__text {
         text-align: center;
-        color: $color-font-primary;
-        font-family: $font-secondary;
+        color: var(--color-font-primary);
+        font-family: var(--font-secondary);
         font-size: 1rem;
     }
 }

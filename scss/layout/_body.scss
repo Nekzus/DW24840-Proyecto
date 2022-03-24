@@ -7,26 +7,27 @@
     h4,
     h5,
     h6 {
-        font-family: $font-primary;
+        font-family: var(--font-primary);
         margin: 0;
     }
 
     p {
-        font-family: $font-secondary;
+        font-family: var(--font-secondary);
         margin: 0;
     }
-    background: radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 0.5rem 0.5rem,
-    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 0.06rem,
-    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0.5rem 0.56rem;
-    background-color: $color-bg-secondary;
+
+    background: radial-gradient(var(--color-gradient-1-black) 15%, transparent 16%) 0 0,
+    radial-gradient(var(--color-gradient-1-black) 15%, transparent 16%) 0.5rem 0.5rem,
+    radial-gradient(var(--color-gradient-2-black) 15%, transparent 20%) 0 0.06rem,
+    radial-gradient(var(--color-gradient-2-black) 15%, transparent 20%) 0.5rem 0.56rem;
+    background-color: var(--color-bg-secondary);
     background-size:1rem 1rem;
     background-attachment: fixed;
     background-position: center;
-    
-input:focus,
-textarea:focus {
-    background-color: $color-bg-secondary;
-    color: $color-font-primary;
-}
+
+    input:focus,
+    textarea:focus {
+        background-color: var(--color-bg-secondary);
+        color: var(--color-font-primary);
+    }
 }

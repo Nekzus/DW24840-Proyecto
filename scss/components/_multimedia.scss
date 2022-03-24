@@ -3,7 +3,7 @@
     &__iframe {
         border-radius: 0.5rem;
         margin: 3rem;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
         grid-area: media;
 
         @include xs {

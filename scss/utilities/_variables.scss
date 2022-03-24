@@ -1,17 +1,38 @@
-// VARIABLES
-$color-bg-primary: #12181B;
-$color-bg-secondary: #2A2E35;
-$color-font-primary: #F5F5F5;
+// VARIABLES SCSS
+
+// LIGHT MODE
+$color-bg-primary: #d5dadd;
+$color-bg-secondary: #dcdee2;
+$color-font-primary:#454E56;
 $color-font-secondary: #2A2E34;
 $color-shadow: rgba(0, 0, 0, 0.5);
-$color-shadow-hover: rgba(42, 46, 52, 0.9);
-$color-violet: #9166CC;
-$color-green: #01ff5f;
-$color-pink: #ff0087;
-$color-blue: #51C5F7;
-$color-instagram: #BC1885;  
+$color-bg-navbar: rgba(225, 229, 235, 0.95);
+$color-violet: #726CDA;
+$color-green: #09C372;
+$color-pink: #F8466A;
+$color-blue: #339AF7;
+$color-instagram: #BC1885;
 $color-youtube: #F21100;
 $color-facebook: #3F62A8;
+$color-gradient-1-black: rgb(128, 108, 108);
+$color-gradient-2-black: rgba(65, 47, 47, 0.1);
+
+// DARK MODE
+$color-bg-primary-dark: #12181B;
+$color-bg-secondary-dark: #29363f;
+$color-font-primary-dark: #F5F5F5;
+$color-font-secondary-dark: #2A2E34;
+$color-shadow-dark: rgba(0, 0, 0, 0.5);
+$color-bg-navbar-dark: rgba(42, 46, 52, 0.9);
+$color-violet-dark: #9166CC;
+$color-green-dark: #01ff5f;
+$color-pink-dark: #ff0087;
+$color-blue-dark: #51C5F7;
+$color-instagram-dark: #BC1885;
+$color-youtube-dark: #F21100;
+$color-facebook-dark: #3F62A8;
+$color-gradient-1-black-dark: black;
+$color-gradient-2-black-dark: rgba(255, 255, 255, .1);
 
 
 $font-primary: "Cubano",

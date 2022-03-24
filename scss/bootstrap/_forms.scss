@@ -37,7 +37,7 @@
         width: 100%;
         padding: 0.4rem;
         border-radius: 0.5rem;
-        font-family: $font-secondary;
+        font-family: var(--font-secondary);
         font-size: 1rem;
     }
 
@@ -47,7 +47,7 @@
     }
 
     &__link {
-        color: $color-green;
+        color: var(--color-green);
         text-decoration: none;
     }
 
@@ -60,9 +60,9 @@
         font-size: 1.5rem;
         border-radius: 0.5rem;
         padding: 0.5rem;
-        color: $color-font-secondary;
-        background-color: $color-green;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        color: var(--color-font-secondary);
+        background-color: var(--color-green);
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
     }
 }
 

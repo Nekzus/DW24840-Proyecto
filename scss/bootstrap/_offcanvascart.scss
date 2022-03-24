@@ -7,9 +7,9 @@
     justify-content: center;
     align-content: center;
     place-items: center;
-    background-color: $color-pink;
-    font-family: $font-primary;
-    color: $color-font-secondary;
+    background-color: var(--color-pink);
+    font-family: var(--font-primary);
+    color: var(--color-font-secondary);
 
     &__btn-close {
         grid-area: close;
@@ -35,7 +35,7 @@
     justify-items: center;
     align-items: center;
     gap: 0.5rem;
-    background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
+    background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
 
     &__btn-buy {
         grid-area: btnBuy;

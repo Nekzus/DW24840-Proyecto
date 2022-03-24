@@ -1,11 +1,11 @@
 // NAVBAR
 .navbar {
-    background-color: $color-shadow-hover;
-    font-family: $font-primary;
+    background-color: var(--color-bg-navbar);
+    font-family: var(--font-primary);
     font-size: 1.2rem;
     padding: 1rem;
     z-index: 10;
-    box-shadow: 0.5rem 0.5rem 2rem $color-shadow;
+    box-shadow: 0.5rem 0.5rem 2rem var(--color-shadow);
     position: sticky;
     top: 0;
 
@@ -19,19 +19,19 @@
         .nav-item {
             margin: 0 0.5rem;
             .active {
-                background-color: $color-blue;
-                color: $color-font-secondary;   
+                background-color: var(--color-blue);
+                color: var(--color-font-secondary);   
             }
         }
         .nav-link {
-            color: $color-font-primary;
+            color: var(--color-font-primary);
             text-decoration: none;
             border-radius: 0.5rem;
             transition: 0.7s;
             &:hover {
                 padding: 0.5rem;
-                background-color: $color-green;
-                color: $color-font-secondary;
+                background-color: var(--color-green);
+                color: var(--color-font-secondary);
             }
 
         }
@@ -51,22 +51,22 @@
     }
 
     .cartLink {
-        color: $color-font-primary;
+        color: var(--color-font-primary);
         font-size: 1.7rem;
         padding: 0.25rem;
         transition: 0.7s;
         border-radius: 0.5rem;
 
         &:hover {
-            color: $color-bg-primary;
-            background-color: $color-green;
+            color: var(--color-bg-primary);
+            background-color: var(--color-green);
         }
     }
 
     .badgeCart {
-        background-color: $color-pink;
-        color: $color-font-primary;
-        font-family: $font-secondary;
+        background-color: var(--color-pink);
+        color: var(--color-font-primary);
+        font-family: var(--font-secondary);
         font-size: 0.9rem;
     }
 }

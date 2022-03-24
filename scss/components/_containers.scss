@@ -14,8 +14,8 @@
         place-items: center;
         place-content: center space-around;
         justify-items: center;
-        color: $color-font-primary;
-        font-family: $font-secondary;
+        color: var(--color-font-primary);
+        font-family: var(--font-secondary);
         font-size: 1.2rem;
     }
 
@@ -28,21 +28,21 @@
         width: 18rem;
         height: 2rem;
         font-size: 0.95rem;
-        font-family: $font-tertiary;
-        color: $color-font-primary;
-        background-color: $color-bg-primary;
+        font-family: var(--font-tertiary);
+        color: var(--color-font-primary);
+        background-color: var(--color-bg-primary);
         border: none;
         border-radius: 0.5rem;
         margin: 1rem;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
     }
 
     &__filters-title {
-        color: $color-font-secondary;
+        color: var(--color-font-secondary);
         padding: 0.5rem;
         border-radius: 0.5rem;
-        background-color: $color-green;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        background-color: var(--color-green);
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
     }
 }
 
@@ -78,15 +78,15 @@
     @include card;
 
     &--badge-off {
-        background-color: $color-green;
-        color: $color-font-secondary;
-        font-family: $font-secondary;
+        background-color: var(--color-green);
+        color: var(--color-font-secondary);
+        font-family: var(--font-secondary);
         left: 80%;
         top: 11%;
         border-width: 0.5rem;
-        border-color: $color-font-primary;
+        border-color: var(--color-font-primary);
         font-size: 1.9rem;
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
     }
 }
 
@@ -96,8 +96,8 @@
     &__form-group {
         display: flex;
         flex-direction: column;
-        background-image: linear-gradient(to bottom, $color-bg-primary, $color-bg-secondary);
-        box-shadow: 0.3125rem 0.3125rem 1.25rem $color-shadow;
+        background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
+        box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
         border-radius: 1rem;
         width: MIN(40rem, 100%);
         height: 100%;
