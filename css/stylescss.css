@@ -518,7 +518,7 @@
   box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow); }
   .section-about__desc-about {
     font-size: 1.2rem;
-    margin-top: 1rem; }
+    padding: 1rem; }
   .section-about__title-about {
     color: var(--color-font-secondary);
     background-color: var(--color-pink);
@@ -672,7 +672,8 @@
 
 .form__label {
   display: block;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin-top: 0.5rem; }
 
 .form__link {
   color: var(--color-green);
@@ -774,7 +775,11 @@
     align-content: center;
     place-items: center; }
   .card .card-title {
+    font-size: 1.4rem;
     margin-bottom: 0; }
+  .card .card-text {
+    font-size: 1.3rem;
+    font-weight: 600; }
   .card:hover {
     box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
     transform: translateY(-3%); }
