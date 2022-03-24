@@ -41,3 +41,12 @@ $font-secondary: "Sofia Pro",
 sans-serif;
 $font-tertiary: "Roboto Mono",
 monospace;
+
+// VARIABLES CSS
+
+//Fonts
+:root {
+    --font-primary: #{$font-primary};
+    --font-secondary: #{$font-secondary};
+    --font-tertiary: #{$font-tertiary};
+}
