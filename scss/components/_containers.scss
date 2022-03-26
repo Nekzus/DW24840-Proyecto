@@ -72,6 +72,19 @@
     @include block-container(&__products, 1rem);
 }
 
+// CONTENEDOR DE CONSOLAS Y ACCESORIOS
+.hardware {
+    &__products {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    @include block-container(&__products, 1rem);
+}
+
 // CONTENEDOR PARA CARD DE PRODUCTO
 .card {
 

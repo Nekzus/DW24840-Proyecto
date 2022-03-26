@@ -3,6 +3,7 @@
     .card-img-top {
         width: 100%;
         height: 15.625rem;
+        overflow: hidden;
         object-fit: cover;
         border-radius: 1rem 1rem 0 0;
     }

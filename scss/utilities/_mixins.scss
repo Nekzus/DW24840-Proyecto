@@ -143,15 +143,16 @@
         
         @else if ($theme==light) {
             &--light {
-                color: var(--color-font-primary);
+                color: var(--color-font-secondary);
                 border-color: var(--color-blue);
                 box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
                 background-color: var(--color-blue);
                 transition: 0.7s;
                 &:hover {
-                    color: var(--color-font-secondary);
-                    border-color: var(--color-green);
-                    background-color: var(--color-green);
+                    color: var(--color-blue);
+                    border-color: var(--color-blue);
+                    background-color: transparent;
+                    
                 }
             }
         }

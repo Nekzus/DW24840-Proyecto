@@ -1,0 +1,146 @@
+// 404 ERROR
+
+.main-404 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    background-color: var(--color-bg-primary);
+    text-align: center;
+    padding: 2rem;
+    width: 60%;
+    width: MIN(40rem, 95%);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    border-radius: 1rem;
+    box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
+
+    &__error {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    &__number {
+        color: var(--color-font-primary);
+        font-weight: 900;
+        font-size: 12rem;
+        line-height: 1;
+        margin: 0 2.1rem;
+    }
+
+    &__illustration {
+        position: relative;
+        width: 12.2rem;
+        margin: 0 2.1rem;
+    }
+
+    &__circle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 12.2rem;
+        height: 11.4rem;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+    }
+
+    &__clip {
+        display: inline-block;
+        position: absolute;
+        bottom: 0.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        flex-wrap: nowrap;
+        width: 12.5rem;
+        height: 13rem;
+        border-radius: 0 0 50% 50%;
+    }
+
+    &__paper {
+        position: absolute;
+        bottom: -0.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 9.2rem;
+        height: 12.4rem;
+        border: 0.3rem solid var(--color-primary);
+        background-color: var(--color-font-primary);
+        border-radius: 0.8rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -0.7rem;
+            right: -0.7rem;
+            width: 1.4rem;
+            height: 1rem;
+            background-color: var(--color-font-primary);
+            border-bottom: 0.3rem solid var(--color-primary);
+            transform: rotate(45deg);
+        }
+    }
+
+    &__face {
+        position: relative;
+        margin-top: 2.3rem;
+    }
+
+    &__eyes {
+        position: absolute;
+        top: 0;
+        left: 2.4rem;
+        width: 4.6rem;
+        height: 0.8rem;
+    }
+
+    &__eye {
+        position: absolute;
+        bottom: 0;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background-color: var(--color-bg-primary);
+        animation-name: eye;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+        &--left {
+            left: 0;
+        }
+
+        &--right {
+            right: 0;
+        }
+    }
+
+    &__mouth {
+        position: absolute;
+        top: 3.1rem;
+        left: 50%;
+        width: 1.6rem;
+        height: 0.2rem;
+        border-radius: 0.1rem;
+        transform: translateX(-50%);
+        background-color: var(--color-bg-primary);
+    }
+
+    &__text {
+        grid-area: text;
+        font-family: var(--font-secondary);
+        font-size: 2rem;
+        margin: 3rem 0;
+        font-weight: 300;
+        color: var(--color-font-primary);
+    }
+}
