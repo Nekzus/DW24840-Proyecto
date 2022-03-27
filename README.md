@@ -14,7 +14,7 @@ Este trabajo surge como proyecto final del curso de Desarrollo Web. Se basa en u
 
 ### Diseño del sitio 💡
 El sitio web además de ser 100% responsive, reconoce la preferencia de usuario en el navegador o sistema operativo, y aplica el modo light o dark.
-
+<br>
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Dark%20Desktop.avif?alt=media&token=50fc95ce-303a-42ff-86e9-2188b06d8265" 
 height="250">
@@ -39,8 +39,9 @@ height="250">
 </p>
 
 ### Código 💡
-
 Para la transpilación del código CSS, se utilizó el lenguaje SASS con la aplicación de la metodología BEM. Con el uso de esta metodología, se logró una mejor organización y modularización del código.
+Para poder trabajar con el modo dark, recurrí a la interpolación de las variables de estilo de SASS a variables de CSS, para mantenerlas durante la transpilacion del código.
+
 
 ### Despliegue 💡
 El sitio fue hosteado en [Firebase](https://firebase.google.com/), con un dominio propio ".com.ar" adquirido en Nic.ar. Los DNS se encuentran ruteados al CDN [Cloudflare](https://www.cloudflare.com/).
@@ -54,7 +55,7 @@ El sitio fue hosteado en [Firebase](https://firebase.google.com/), con un domini
 - Se incursiono en la optimización de las imágenes, migrando del formato WEBP al formato AVIF. Se logro una mayor resolución con menos peso y tiempos de carga.
 - Se implemento la página de error 404, para que el usuario pueda ver una página de error cuando la página no existe.
 - Se generó el sitemap.xml para que el usuario pueda encontrar el sitio web. Mediante Google Console Search, se indexo el sitio web en el buscador de google.
-
+<br>
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Google%20SEO.avif?alt=media&token=47e3cfed-07f0-4d5e-9ad2-b9b97bb959a9" 
 height="160">
@@ -62,7 +63,7 @@ height="160">
 </p>
 
 - Métricas de SEO y optimización del sitio web (Lighthouse):
-
+<br>
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Metricas%20Desktop.avif?alt=media&token=d185ab05-0ed3-4cb9-96d7-0afe108da84f" 
 height="300">
