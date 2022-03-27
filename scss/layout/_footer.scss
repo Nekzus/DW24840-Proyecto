@@ -40,6 +40,21 @@
     }
 }
 
+.section-pay {
+    @extend .section-about;
+
+    &__desc-pay {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    &__title-pay {
+        @extend .section-about__title-about;
+    }
+}
+
 .section-follow {
     display: grid;
     grid-template-columns: 1fr;

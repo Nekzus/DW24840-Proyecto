@@ -12,6 +12,12 @@
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-15.6rem * 7)); } }
+
 .btn, .form__button {
   text-transform: uppercase;
   font-family: var(--font-secondary);
@@ -166,7 +172,7 @@
     margin: 0 1rem; }
   .center__text {
     grid-area: text;
-    font-family: var(--font-secondary);
+    font-family: var(--color-font-secondary);
     font-size: 2rem;
     margin: 3rem 0;
     font-weight: 300;
@@ -377,13 +383,14 @@
   flex: 0 0 auto; }
   .card--badge-off {
     background-color: var(--color-green);
+    border-style: solid;
     color: var(--color-font-secondary);
     font-family: var(--font-secondary);
     left: 80%;
     top: 11%;
-    border-width: 0.5rem;
+    border-width: 0.25rem;
     border-color: var(--color-font-primary);
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow); }
 
 .form__form-group {
@@ -517,6 +524,41 @@
       width: 57.5rem;
       height: 32.3rem; } }
 
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px var(--color-shadow);
+  height: 6.2rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 6.2rem;
+    position: absolute;
+    width: 12.5rem;
+    z-index: 2; }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg); }
+  .slider::before {
+    left: 0;
+    top: 0; }
+  .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(15.6rem * 14); }
+  .slider .slide {
+    display: flex;
+    align-items: center;
+    height: 6.2rem;
+    width: 15.6rem; }
+    .slider .slide__img {
+      height: 6.2rem;
+      width: 15.6rem; }
+
 .offcanvas-header {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -538,7 +580,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 2rem);
-  grid-template-areas: "product product price price" "separator separator separator separator" "total total totalPrice totalPrice" "btnBuy btnBuy btnBuy btnBuy";
+  grid-template-areas: "product product price price" "separator separator separator separator" "total total totalPrice totalPrice" "btnBuy btnBuy btnBuy btnBuy";
   justify-content: center;
   align-content: flex-start;
   justify-items: center;
@@ -596,7 +638,7 @@
   color: var(--color-font-primary);
   font-family: var(--font-secondary); }
 
-.section-about {
+.section-about, .section-pay {
   background-image: linear-gradient(to bottom, var(--color-bg-primary), var(--color-bg-secondary));
   padding: 1.5rem;
   border-radius: 1rem;
@@ -604,19 +646,25 @@
   .section-about__desc-about {
     font-size: 1.2rem;
     padding: 1rem; }
-  .section-about__title-about {
+  .section-about__title-about, .section-pay__title-pay {
     color: var(--color-font-secondary);
     background-color: var(--color-pink);
     border-radius: 0.5rem;
     padding: 0.5rem;
     box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow); }
 
+.section-pay__desc-pay {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  font-size: 2rem; }
+
 .section-follow {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   gap: 1rem;
-  grid-template-areas: "newsletter" "socials" "contact";
+  grid-template-areas: "newsletter" "socials" "contact";
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -879,17 +927,26 @@
   .card .card-body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 1.875rem 2.6875rem;
+    grid-template-rows: 1rem 3rem 1.875rem 2.6875rem;
     gap: 0.5rem;
     justify-content: center;
     align-content: center;
     place-items: center; }
+  .card .card-manu {
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    font-family: var(--font-tertiary); }
   .card .card-title {
     font-size: 1.4rem;
     margin-bottom: 0; }
   .card .card-text {
     font-size: 1.3rem;
-    font-weight: 600; }
+    font-weight: 600;
+    color: var(--color-green); }
+    .card .card-text--orig-price {
+      margin-left: 1rem;
+      text-decoration: line-through;
+      color: var(--color-font-primary); }
   .card:hover {
     box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
     transform: translateY(-3%); }

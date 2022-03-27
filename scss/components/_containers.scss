@@ -92,13 +92,14 @@
 
     &--badge-off {
         background-color: var(--color-green);
+        border-style: solid;
         color: var(--color-font-secondary);
         font-family: var(--font-secondary);
         left: 80%;
         top: 11%;
-        border-width: 0.5rem;
+        border-width: 0.25rem;
         border-color: var(--color-font-primary);
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow);
     }
 }

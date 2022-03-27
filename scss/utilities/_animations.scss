@@ -11,3 +11,9 @@
         opacity: 1
     }
 }
+
+// ANIMATION CUSTOM CAROUSEL
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-15.6rem * 7))}
+}
