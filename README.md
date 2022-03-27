@@ -52,7 +52,7 @@ El sitio fue hosteado en [Firebase](https://firebase.google.com/), con un domini
 
 ### SEO 💡
 - El sitio web fue optimizado para que funcionara en los principios de SEO, se agregaron meta description y meta keywords.
-- Se incursiono en la optimización de las imágenes, migrando del formato WEBP al formato AVIF. Se logro una mayor resolución con menos peso y tiempos de carga.
+- Se incursiono en la optimización de las imágenes, migrando del formato WEBP al formato AVIF (todavia no compatible con navegador Edge). Se logro una mayor resolución con menos peso y tiempos de carga.
 - Se implemento la página de error 404, para que el usuario pueda ver una página de error cuando la página no existe.
 - Se generó el sitemap.xml para que el usuario pueda encontrar el sitio web. Mediante Google Console Search, se indexo el sitio web en el buscador de google.
 <br>
