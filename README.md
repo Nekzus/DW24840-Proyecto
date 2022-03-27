@@ -44,7 +44,7 @@ Para poder trabajar con el modo dark, recurrí a la interpolación de las variab
 
 
 ### Despliegue 💡
-El sitio fue hosteado en [Firebase](https://firebase.google.com/), con un dominio propio ".com.ar" adquirido en [Nic.ar](https://nic.ar/). Los DNS se encuentran ruteados al CDN [Cloudflare](https://www.cloudflare.com/).
+El sitio fue hosteado en [Firebase](https://firebase.google.com/), con un dominio propio ".com.ar" adquirido en [Nic.ar](https://nic.ar/). Los DNS se encuentran delegados al CDN [Cloudflare](https://www.cloudflare.com/).
 - Dominio del sitio web:
 ```sh
   https://www.nekzusgamestore.com.ar
