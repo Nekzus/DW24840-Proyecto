@@ -527,15 +527,16 @@
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px var(--color-shadow);
-  height: 6.2rem;
+  height: 5rem;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  opacity: 0.7; }
   .slider::before, .slider::after {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 6.2rem;
+    height: 5rem;
     position: absolute;
     width: 12.5rem;
     z-index: 2; }
@@ -553,11 +554,10 @@
   .slider .slide {
     display: flex;
     align-items: center;
-    height: 6.2rem;
+    height: 5rem;
     width: 15.6rem; }
     .slider .slide__img {
-      height: 6.2rem;
-      width: 15.6rem; }
+      height: 5rem; }
 
 .offcanvas-header {
   display: grid;
@@ -653,11 +653,14 @@
     padding: 0.5rem;
     box-shadow: 0.3125rem 0.3125rem 1.25rem var(--color-shadow); }
 
-.section-pay__desc-pay {
+.section-pay {
   display: flex;
-  justify-content: space-evenly;
-  padding: 1rem;
-  font-size: 2rem; }
+  flex-direction: column; }
+  .section-pay__desc-pay {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    font-size: 2rem; }
 
 .section-follow {
   display: grid;
@@ -934,7 +937,7 @@
     place-items: center; }
   .card .card-manu {
     text-transform: uppercase;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
     font-family: var(--font-tertiary); }
   .card .card-title {
     font-size: 1.4rem;

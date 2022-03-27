@@ -42,7 +42,8 @@
 
 .section-pay {
     @extend .section-about;
-
+    display: flex;
+    flex-direction: column;
     &__desc-pay {
         display: flex;
         justify-content: space-evenly;
