@@ -11,6 +11,30 @@ Estudiante de las nuevas tecnologías en [CoderHouse](https://www.coderhouse.com
 
 ## Descripción del proyecto 🚀
 Este trabajo surge como proyecto final del curso de Desarrollo Web. Se basa en un sitio de e-commerce para venta de productos gamer, con la finalidad de que los usuarios puedan adquirirlos en cualquier momento y lugar. A futuro este proyecto migrará con la aplicacion del lenguaje de javascript a un entorno ReactJs o NextJs.
+El sitio web ademas de ser 100% responsive, reconoce la configuracion de usuario en el navegador o sistema operativo, y aplica el modo light/dark.
+
+<p align="center">
+<img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Dark%20Desktop.avif?alt=media&token=50fc95ce-303a-42ff-86e9-2188b06d8265" 
+height="250">
+</p>
+<p align="center">
+<img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Light%20Desktop.avif?alt=media&token=98c7c026-2cfd-44d0-ab21-d7a79cf5ba1c" 
+height="250">
+</p>
+<p align="center">
+<img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Dark%20Movil.avif?alt=media&token=50a4c728-81fa-4681-a932-69107c6f623c" 
+height="250">
+<img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Light%20Movil.avif?alt=media&token=139bd3a5-f463-4e84-8ac1-5b26c28cff4c" 
+height="250">
+</p>
+
+Para la transpilacion del código CSS, se utilizo el lenguaje de SASS con la aplicación de la metodologia BEM.
+sitemap
+firabase
+pagina 404
+favicon/webmanifest android
+SEO
+CDN Cloudflare
 
 ## Estado del proyecto 📋
 
