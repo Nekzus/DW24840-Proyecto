@@ -10,31 +10,70 @@ height="250">
 Estudiante de las nuevas tecnologías en [CoderHouse](https://www.coderhouse.com/), me encuentro cursando la carrera de Desarrollador Full Stack. Siempre me gusto la programación, con origen en la rama de la electrónica, decidí convertir el hobby en profesión.
 
 ## Descripción del proyecto 🚀
-Este trabajo surge como proyecto final del curso de Desarrollo Web. Se basa en un sitio de e-commerce para venta de productos gamer, con la finalidad de que los usuarios puedan adquirirlos en cualquier momento y lugar. A futuro este proyecto migrará con la aplicacion del lenguaje de javascript a un entorno ReactJs o NextJs.
-El sitio web ademas de ser 100% responsive, reconoce la configuracion de usuario en el navegador o sistema operativo, y aplica el modo light/dark.
+Este trabajo surge como proyecto final del curso de Desarrollo Web. Se basa en un sitio de e-commerce para venta de productos gamer, con la finalidad de que los usuarios puedan adquirirlos en cualquier momento y lugar. A futuro este proyecto migrará con la aplicación del lenguaje de javascript a un entorno ReactJs o NextJs.
+
+### Diseño del sitio 💡
+El sitio web además de ser 100% responsive, reconoce la preferencia de usuario en el navegador o sistema operativo, y aplica el modo light o dark.
 
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Dark%20Desktop.avif?alt=media&token=50fc95ce-303a-42ff-86e9-2188b06d8265" 
 height="250">
+<p align="center">Modo dark desktop</p>
 </p>
+<br>
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Light%20Desktop.avif?alt=media&token=98c7c026-2cfd-44d0-ab21-d7a79cf5ba1c" 
 height="250">
+<p align="center">Modo light desktop</p>
 </p>
+<br>
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Dark%20Movil.avif?alt=media&token=50a4c728-81fa-4681-a932-69107c6f623c" 
 height="250">
+&nbsp
+&nbsp
+&nbsp
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Version%20Light%20Movil.avif?alt=media&token=139bd3a5-f463-4e84-8ac1-5b26c28cff4c" 
 height="250">
+<p align="center">Modo dark/light movil</p>
 </p>
 
-Para la transpilacion del código CSS, se utilizo el lenguaje de SASS con la aplicación de la metodologia BEM.
-sitemap
-firabase
-pagina 404
-favicon/webmanifest android
-SEO
-CDN Cloudflare
+### Código 💡
+
+Para la transpilación del código CSS, se utilizó el lenguaje SASS con la aplicación de la metodología BEM. Con el uso de esta metodología, se logró una mejor organización y modularización del código.
+
+### Despliegue 💡
+El sitio fue hosteado en [Firebase](https://firebase.google.com/), con un dominio propio ".com.ar" adquirido en Nic.ar. Los DNS se encuentran ruteados al CDN [Cloudflare](https://www.cloudflare.com/).
+- Dominio del sitio web:
+```sh
+  https://www.nekzusgamestore.com.ar
+```
+
+### SEO 💡
+- El sitio web fue optimizado para que funcionara en los principios de SEO, se agregaron meta description y meta keywords.
+- Se incursiono en la optimización de las imágenes, migrando del formato WEBP al formato AVIF. Se logro una mayor resolución con menos peso y tiempos de carga.
+- Se implemento la página de error 404, para que el usuario pueda ver una página de error cuando la página no existe.
+- Se generó el sitemap.xml para que el usuario pueda encontrar el sitio web. Mediante Google Console Search, se indexo el sitio web en el buscador de google.
+
+<p align="center">
+<img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Google%20SEO.avif?alt=media&token=47e3cfed-07f0-4d5e-9ad2-b9b97bb959a9" 
+height="180">
+<p align="center">Indexación en google</p>
+</p>
+
+- Métricas de SEO y optimización del sitio web (Lighthouse):
+
+<p align="center">
+<img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Metricas%20Desktop.avif?alt=media&token=d185ab05-0ed3-4cb9-96d7-0afe108da84f" 
+height="350">
+<p align="center">Versión desktop</p>
+</p>
+<br>
+<p align="center">
+<img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Metricas%20Movil.avif?alt=media&token=4da4c8de-6087-4f75-9719-59d87e92e911" 
+height="350">
+<p align="center">Versión móvil</p>
+</p>
 
 ## Estado del proyecto 📋
 
@@ -60,7 +99,7 @@ CDN Cloudflare
 ```sh
   npm run watch-css
 ```
-## Vista previa del proyecto (demo) 📦
+## Vista del proyecto finalizado 📦
 
 Pueden ver la web desplegada funcionando en https://www.nekzusgamestore.com.ar/
 
