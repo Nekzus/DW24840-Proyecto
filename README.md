@@ -2,7 +2,7 @@
 ## <p align="center"><font face = "El Messiri">E-Commerce Productos Gamer</font></p>
 
 <p align="center">
-<img src="https://firebasestorage.googleapis.com/v0/b/db-nekzusgamestore-js23175.appspot.com/o/Logo%20GameStore%2Flogo-nekzus-game-store-shadow.png?alt=media&token=2f9bfa84-e1a9-4ec4-9975-61863095ce46" 
+<img src="[/images/](https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/logo-nekzus-game-store-shadow.avif?alt=media&token=df588f06-cfd6-4261-8978-62e8f3e32dc9)" 
 height="250">
 </p>
 
