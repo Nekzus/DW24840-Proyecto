@@ -137,10 +137,13 @@
 
 // CONTENEDOR DE MULTIMEDIA - VIDEO PRESENTACION
 .video {
-    @include block-container(&__content);
+
+    @include block-container(&__iframe);
+
 }
 
 // CONTENEDOR DE MULTIMEDIA - MAPA
 .map {
-    @include block-container(&__content);
+
+    @include block-container(&__iframe);
 }
