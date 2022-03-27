@@ -57,7 +57,7 @@ El sitio fue hosteado en [Firebase](https://firebase.google.com/), con un domini
 
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Google%20SEO.avif?alt=media&token=47e3cfed-07f0-4d5e-9ad2-b9b97bb959a9" 
-height="180">
+height="160">
 <p align="center">Indexación en google</p>
 </p>
 
@@ -65,13 +65,13 @@ height="180">
 
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Metricas%20Desktop.avif?alt=media&token=d185ab05-0ed3-4cb9-96d7-0afe108da84f" 
-height="350">
+height="300">
 <p align="center">Versión desktop</p>
 </p>
 <br>
 <p align="center">
 <img src="https://firebasestorage.googleapis.com/v0/b/nekzus-game-store-dw.appspot.com/o/Metricas%20Movil.avif?alt=media&token=4da4c8de-6087-4f75-9719-59d87e92e911" 
-height="350">
+height="300">
 <p align="center">Versión móvil</p>
 </p>
 
